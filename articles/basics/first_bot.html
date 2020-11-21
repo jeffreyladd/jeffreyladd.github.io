@@ -231,7 +231,7 @@ namespace MyFirstBot
                 TokenType = TokenType.Bot
             });
 
-            discord.MessageCreated += async e =&gt;
+            discord.MessageCreated += async (s, e) =&gt;
             {
                 if (e.Message.Content.ToLower().StartsWith(&quot;ping&quot;)) 
                     await e.Message.RespondAsync(&quot;pong!&quot;);
@@ -261,7 +261,7 @@ Your bot should respond with <em>pong!</em> for each <em>ping</em> you send.</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/jeffreyladd/DSharpPlus/blob/Docs/AddIntentsArticle/docs/articles/basics/first_bot.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/jeffreyladd/DSharpPlus/blob/TweakFAQ/docs/articles/basics/first_bot.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

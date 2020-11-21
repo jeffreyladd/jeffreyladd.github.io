@@ -5344,6 +5344,19 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.DiscordConfiguration.DiscordConfiguration
   nameWithType: DiscordConfiguration.DiscordConfiguration
+- uid: DSharpPlus.DiscordConfiguration.AlwaysCacheMembers
+  name: AlwaysCacheMembers
+  href: api/DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_AlwaysCacheMembers
+  commentId: P:DSharpPlus.DiscordConfiguration.AlwaysCacheMembers
+  fullName: DSharpPlus.DiscordConfiguration.AlwaysCacheMembers
+  nameWithType: DiscordConfiguration.AlwaysCacheMembers
+- uid: DSharpPlus.DiscordConfiguration.AlwaysCacheMembers*
+  name: AlwaysCacheMembers
+  href: api/DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_AlwaysCacheMembers_
+  commentId: Overload:DSharpPlus.DiscordConfiguration.AlwaysCacheMembers
+  isSpec: "True"
+  fullName: DSharpPlus.DiscordConfiguration.AlwaysCacheMembers
+  nameWithType: DiscordConfiguration.AlwaysCacheMembers
 - uid: DSharpPlus.DiscordConfiguration.AutoReconnect
   name: AutoReconnect
   href: api/DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_AutoReconnect

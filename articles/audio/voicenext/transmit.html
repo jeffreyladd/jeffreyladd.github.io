@@ -88,8 +88,9 @@ discord.UseVoiceNext();
 VoiceNextConnection connection = await channel.ConnectAsync();
 </code></pre><h3 id="transmit">Transmit</h3>
 <p>Discord requires that we send Opus encoded stereo PCM audio data at a sample rate of 48,000 Hz.</p>
-<p>You&#39;ll need to convert your audio source to PCM S16LE using your preferred program for media conversion, then read that data into a <code>Stream</code> object or an array of <code>byte</code> to be used with VoiceNext.
-Opus encoding of the PCM data will be done automatically by VoiceNext before sending it to Discord.</p>
+<p>You&#39;ll need to convert your audio source to PCM S16LE using your preferred program for media conversion, then read 
+that data into a <code>Stream</code> object or an array of <code>byte</code> to be used with VoiceNext. Opus encoding of the PCM data will 
+be done automatically by VoiceNext before sending it to Discord.</p>
 <p>This example will use <a href="https://ffmpeg.org/about.html">ffmpeg</a> to convert an MP3 file to a PCM stream.</p>
 <pre><code class="lang-cs">var filePath = &quot;funiculi_funicula.mp3&quot;;
 var ffmpeg = Process.Start(new ProcessStartInfo
@@ -101,13 +102,18 @@ var ffmpeg = Process.Start(new ProcessStartInfo
 });
 
 Stream pcm = ffmpeg.StandardOutput.BaseStream;
-</code></pre><p>Now that our audio is the correct format, we&#39;ll need to get a <em>transmit stream</em> for the channel we&#39;re connected to.
-You can think of the transmit stream as our direct interface with a voice channel; any data written to one will be processed by VoiceNext, queued, and sent to Discord which will then be output to the connected voice channel.</p>
-<pre><code class="lang-cs">VoiceTransmitStream transmit = connection.GetTransmitStream();
-</code></pre><p>Once we have a transmit stream, we can &#39;play&#39; our audio by copying our PCM data to the transmit stream buffer.</p>
+</code></pre><p>Now that our audio is the correct format, we&#39;ll need to get a <em>transmit sink</em> for the channel we&#39;re connected to.
+You can think of the transmit stream as our direct interface with a voice channel; any data written to one will be 
+processed by VoiceNext, queued, and sent to Discord which will then be output to the connected voice channel.</p>
+<pre><code class="lang-cs">VoiceTransmitSink transmit = connection.GetTransmitSink();
+</code></pre><p>Once we have a transmit sink, we can &#39;play&#39; our audio by copying our PCM data to the transmit sink buffer.</p>
 <pre><code class="lang-cs">await pcm.CopyToAsync(transmit);
-</code></pre><p>Keep in mind that <code>Stream#CopyToAsync()</code> will copy the <em>entire</em> PCM stream to the transmit buffer which will cause VoiceNext to continuously queue and send batches of data to Discord until the buffer is empty. In other words, your audio will play from start to finish without stopping.
-If you&#39;d like to have finer control of the playback, you should instead consider using <code>Stream#ReadAsync()</code> and <code>VoiceTransmitStream#WriteAsync()</code> to manually copy small portions of PCM data to the transmit stream.</p>
+</code></pre><p><code>Stream#CopyToAsync()</code> will copy PCM data from the input stream to the output sink, up to the sink&#39;s configured 
+capacity, at which point it will wait until it can copy more. This means that the call will hold the task&#39;s execution, 
+until such time that the entire input stream has been consumed, and enqueued in the sink.</p>
+<p>This operation cannot be cancelled. If you&#39;d like to have finer control of the playback, you should instead consider 
+using <code>Stream#ReadAsync()</code> and <code>VoiceTransmitSink#WriteAsync()</code> to manually copy small portions of PCM data to the 
+transmit sink.</p>
 <h3 id="disconnect">Disconnect</h3>
 <p>Similar to joining, leaving a voice channel is rather straightforward.</p>
 <pre><code class="lang-cs">var vnext = discord.GetVoiceNext();
@@ -128,7 +134,7 @@ public async Task PlayCommand(CommandContext ctx, string path)
     var vnext = ctx.Client.GetVoiceNext();
     var connection = vnext.GetConnection(ctx.Guild);
 
-    var transmit = connection.GetTransmitStream();
+    var transmit = connection.GetTransmitSink();
 
     var pcm = ConvertAudioToPcm(path);
     await pcm.CopyToAsync(transmit);
@@ -164,7 +170,7 @@ private Stream ConvertAudioToPcm(string filePath)
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/jeffreyladd/DSharpPlus/blob/Docs/AddIntentsArticle/docs/articles/audio/voicenext/transmit.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/jeffreyladd/DSharpPlus/blob/TweakFAQ/docs/articles/audio/voicenext/transmit.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
