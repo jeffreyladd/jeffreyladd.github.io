@@ -84,7 +84,7 @@ Because of this we do not support Mono in any way, nor will we support any other
 <p>To troubleshoot, please ensure that:</p>
 <ul>
 <li>You are using the latest version of DSharpPlus.</li>
-<li>You have properly enabled VoiceNext with your instance of <a class="xref" href="api/DSharpPlus.DiscordClient.html">DiscordClient</a> .</li>
+<li>You have properly enabled VoiceNext with your instance of <a class="xref" href="api/DSharpPlus.DiscordClient.html">DiscordClient</a>.</li>
 <li>You are <em>not</em> using VoiceNext in an event handler.</li>
 <li>You have <a class="xref" href="articles/audio/voicenext/prerequisites.html">opus and libsodium</a> available in your target environment.</li>
 </ul>
@@ -140,10 +140,10 @@ However, if you meant an activity like this:</p>
 <p>You can use either of the following</p>
 <ul>
 <li>The overload for <a class="xref" href="api/DSharpPlus.DiscordClient.html#DSharpPlus_DiscordClient_ConnectAsync_DiscordActivity_System_Nullable_UserStatus__System_Nullable_DateTimeOffset__">ConnectAsync(DiscordActivity, Nullable&lt;UserStatus&gt;, Nullable&lt;DateTimeOffset&gt;)</a> which accepts a <a class="xref" href="api/DSharpPlus.Entities.DiscordActivity.html">DiscordActivity</a>.</li>
-<li><a class="xref" href="api/DSharpPlus.DiscordClient.html#DSharpPlus_DiscordClient_ConnectAsync_DiscordActivity_System_Nullable_UserStatus__System_Nullable_DateTimeOffset__">ConnectAsync(DiscordActivity, Nullable&lt;UserStatus&gt;, Nullable&lt;DateTimeOffset&gt;)</a> at any point after <code>Ready</code> has been fired.</li>
+<li><a class="xref" href="api/DSharpPlus.DiscordClient.html#DSharpPlus_DiscordClient_UpdateStatusAsync_DiscordActivity_System_Nullable_UserStatus__System_Nullable_DateTimeOffset__">UpdateStatusAsync(DiscordActivity, Nullable&lt;UserStatus&gt;, Nullable&lt;DateTimeOffset&gt;)</a> OR <a class="xref" href="api/DSharpPlus.DiscordShardedClient.html#DSharpPlus_DiscordShardedClient_UpdateStatusAsync_DiscordActivity_System_Nullable_UserStatus__System_Nullable_DateTimeOffset__">UpdateStatusAsync(DiscordActivity, Nullable&lt;UserStatus&gt;, Nullable&lt;DateTimeOffset&gt;)</a> (for the sharded client) at any point after <code>Ready</code> has been fired.</li>
 </ul>
 <h3 id="am-i-able-to-retrieve-a-dsharpplusentitiesdiscordrole-by-name">Am I able to retrieve a <a class="xref" href="api/DSharpPlus.Entities.DiscordRole.html">DiscordRole</a> by name?</h3>
-<p>Yes. Use LINQ on the <code>Roles</code> property of your instance of <a class="xref" href="api/DSharpPlus.Entities.DiscordGuild.html">DiscordGuild</a> and compare against the <code>Name</code> of  each <code>DiscordRole</code>.</p>
+<p>Yes. Use LINQ on the <code>Roles</code> property of your instance of <a class="xref" href="api/DSharpPlus.Entities.DiscordGuild.html">DiscordGuild</a> and compare against the <code>Name</code> of  each <a class="xref" href="api/DSharpPlus.Entities.DiscordRole.html">DiscordRole</a>.</p>
 <h3 id="why-are-you-using-newtonsoftjson-when-systemtextjson-is-available">Why are you using Newtonsoft.Json when System.Text.Json is available</h3>
 <p>Yes <code>System.Text.Json</code> is available to use but it still doesnt stand up to what we currently need which is why we still use Newtonsoft.Json.
 Maybe in time we can switch to your favorite Json Deserializer but for right now we will be using Newtonsoft.Json for the forseeable future.  </p>
