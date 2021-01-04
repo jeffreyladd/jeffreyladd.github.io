@@ -28,6 +28,9 @@ references:
 - uid: beyond_basics_logging_third_party
   name: Third Party Logging
   href: articles/beyond_basics/logging/third_party.html
+- uid: beyond_basics_messagebuilder
+  name: Message Builder
+  href: articles/beyond_basics/messagebuilder.html
 - uid: beyond_basics_sharding
   name: Sharding
   href: articles/beyond_basics/sharding.html
@@ -2391,15 +2394,30 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.CommandsNext.CommandContext.RawArgumentString
   nameWithType: CommandContext.RawArgumentString
-- uid: DSharpPlus.CommandsNext.CommandContext.RespondAsync(System.String,System.Boolean,DiscordEmbed,IEnumerable{IMention})
-  name: RespondAsync(String, Boolean, DiscordEmbed, IEnumerable<IMention>)
-  href: api/DSharpPlus.CommandsNext.CommandContext.html#DSharpPlus_CommandsNext_CommandContext_RespondAsync_System_String_System_Boolean_DiscordEmbed_IEnumerable_IMention__
-  commentId: M:DSharpPlus.CommandsNext.CommandContext.RespondAsync(System.String,System.Boolean,DiscordEmbed,IEnumerable{IMention})
-  name.vb: RespondAsync(String, Boolean, DiscordEmbed, IEnumerable(Of IMention))
-  fullName: DSharpPlus.CommandsNext.CommandContext.RespondAsync(System.String, System.Boolean, DiscordEmbed, IEnumerable<IMention>)
-  fullName.vb: DSharpPlus.CommandsNext.CommandContext.RespondAsync(System.String, System.Boolean, DiscordEmbed, IEnumerable(Of IMention))
-  nameWithType: CommandContext.RespondAsync(String, Boolean, DiscordEmbed, IEnumerable<IMention>)
-  nameWithType.vb: CommandContext.RespondAsync(String, Boolean, DiscordEmbed, IEnumerable(Of IMention))
+- uid: DSharpPlus.CommandsNext.CommandContext.RespondAsync(DiscordEmbed)
+  name: RespondAsync(DiscordEmbed)
+  href: api/DSharpPlus.CommandsNext.CommandContext.html#DSharpPlus_CommandsNext_CommandContext_RespondAsync_DiscordEmbed_
+  commentId: M:DSharpPlus.CommandsNext.CommandContext.RespondAsync(DiscordEmbed)
+  fullName: DSharpPlus.CommandsNext.CommandContext.RespondAsync(DiscordEmbed)
+  nameWithType: CommandContext.RespondAsync(DiscordEmbed)
+- uid: DSharpPlus.CommandsNext.CommandContext.RespondAsync(DiscordMessageBuilder)
+  name: RespondAsync(DiscordMessageBuilder)
+  href: api/DSharpPlus.CommandsNext.CommandContext.html#DSharpPlus_CommandsNext_CommandContext_RespondAsync_DiscordMessageBuilder_
+  commentId: M:DSharpPlus.CommandsNext.CommandContext.RespondAsync(DiscordMessageBuilder)
+  fullName: DSharpPlus.CommandsNext.CommandContext.RespondAsync(DiscordMessageBuilder)
+  nameWithType: CommandContext.RespondAsync(DiscordMessageBuilder)
+- uid: DSharpPlus.CommandsNext.CommandContext.RespondAsync(System.String)
+  name: RespondAsync(String)
+  href: api/DSharpPlus.CommandsNext.CommandContext.html#DSharpPlus_CommandsNext_CommandContext_RespondAsync_System_String_
+  commentId: M:DSharpPlus.CommandsNext.CommandContext.RespondAsync(System.String)
+  fullName: DSharpPlus.CommandsNext.CommandContext.RespondAsync(System.String)
+  nameWithType: CommandContext.RespondAsync(String)
+- uid: DSharpPlus.CommandsNext.CommandContext.RespondAsync(System.String,DiscordEmbed)
+  name: RespondAsync(String, DiscordEmbed)
+  href: api/DSharpPlus.CommandsNext.CommandContext.html#DSharpPlus_CommandsNext_CommandContext_RespondAsync_System_String_DiscordEmbed_
+  commentId: M:DSharpPlus.CommandsNext.CommandContext.RespondAsync(System.String,DiscordEmbed)
+  fullName: DSharpPlus.CommandsNext.CommandContext.RespondAsync(System.String, DiscordEmbed)
+  nameWithType: CommandContext.RespondAsync(String, DiscordEmbed)
 - uid: DSharpPlus.CommandsNext.CommandContext.RespondAsync*
   name: RespondAsync
   href: api/DSharpPlus.CommandsNext.CommandContext.html#DSharpPlus_CommandsNext_CommandContext_RespondAsync_
@@ -2407,56 +2425,6 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.CommandsNext.CommandContext.RespondAsync
   nameWithType: CommandContext.RespondAsync
-- uid: DSharpPlus.CommandsNext.CommandContext.RespondWithFileAsync(FileStream,System.String,System.Boolean,DiscordEmbed,IEnumerable{IMention})
-  name: RespondWithFileAsync(FileStream, String, Boolean, DiscordEmbed, IEnumerable<IMention>)
-  href: api/DSharpPlus.CommandsNext.CommandContext.html#DSharpPlus_CommandsNext_CommandContext_RespondWithFileAsync_FileStream_System_String_System_Boolean_DiscordEmbed_IEnumerable_IMention__
-  commentId: M:DSharpPlus.CommandsNext.CommandContext.RespondWithFileAsync(FileStream,System.String,System.Boolean,DiscordEmbed,IEnumerable{IMention})
-  name.vb: RespondWithFileAsync(FileStream, String, Boolean, DiscordEmbed, IEnumerable(Of IMention))
-  fullName: DSharpPlus.CommandsNext.CommandContext.RespondWithFileAsync(FileStream, System.String, System.Boolean, DiscordEmbed, IEnumerable<IMention>)
-  fullName.vb: DSharpPlus.CommandsNext.CommandContext.RespondWithFileAsync(FileStream, System.String, System.Boolean, DiscordEmbed, IEnumerable(Of IMention))
-  nameWithType: CommandContext.RespondWithFileAsync(FileStream, String, Boolean, DiscordEmbed, IEnumerable<IMention>)
-  nameWithType.vb: CommandContext.RespondWithFileAsync(FileStream, String, Boolean, DiscordEmbed, IEnumerable(Of IMention))
-- uid: DSharpPlus.CommandsNext.CommandContext.RespondWithFileAsync(System.String,Stream,System.String,System.Boolean,DiscordEmbed,IEnumerable{IMention})
-  name: RespondWithFileAsync(String, Stream, String, Boolean, DiscordEmbed, IEnumerable<IMention>)
-  href: api/DSharpPlus.CommandsNext.CommandContext.html#DSharpPlus_CommandsNext_CommandContext_RespondWithFileAsync_System_String_Stream_System_String_System_Boolean_DiscordEmbed_IEnumerable_IMention__
-  commentId: M:DSharpPlus.CommandsNext.CommandContext.RespondWithFileAsync(System.String,Stream,System.String,System.Boolean,DiscordEmbed,IEnumerable{IMention})
-  name.vb: RespondWithFileAsync(String, Stream, String, Boolean, DiscordEmbed, IEnumerable(Of IMention))
-  fullName: DSharpPlus.CommandsNext.CommandContext.RespondWithFileAsync(System.String, Stream, System.String, System.Boolean, DiscordEmbed, IEnumerable<IMention>)
-  fullName.vb: DSharpPlus.CommandsNext.CommandContext.RespondWithFileAsync(System.String, Stream, System.String, System.Boolean, DiscordEmbed, IEnumerable(Of IMention))
-  nameWithType: CommandContext.RespondWithFileAsync(String, Stream, String, Boolean, DiscordEmbed, IEnumerable<IMention>)
-  nameWithType.vb: CommandContext.RespondWithFileAsync(String, Stream, String, Boolean, DiscordEmbed, IEnumerable(Of IMention))
-- uid: DSharpPlus.CommandsNext.CommandContext.RespondWithFileAsync(System.String,System.String,System.Boolean,DiscordEmbed,IEnumerable{IMention})
-  name: RespondWithFileAsync(String, String, Boolean, DiscordEmbed, IEnumerable<IMention>)
-  href: api/DSharpPlus.CommandsNext.CommandContext.html#DSharpPlus_CommandsNext_CommandContext_RespondWithFileAsync_System_String_System_String_System_Boolean_DiscordEmbed_IEnumerable_IMention__
-  commentId: M:DSharpPlus.CommandsNext.CommandContext.RespondWithFileAsync(System.String,System.String,System.Boolean,DiscordEmbed,IEnumerable{IMention})
-  name.vb: RespondWithFileAsync(String, String, Boolean, DiscordEmbed, IEnumerable(Of IMention))
-  fullName: DSharpPlus.CommandsNext.CommandContext.RespondWithFileAsync(System.String, System.String, System.Boolean, DiscordEmbed, IEnumerable<IMention>)
-  fullName.vb: DSharpPlus.CommandsNext.CommandContext.RespondWithFileAsync(System.String, System.String, System.Boolean, DiscordEmbed, IEnumerable(Of IMention))
-  nameWithType: CommandContext.RespondWithFileAsync(String, String, Boolean, DiscordEmbed, IEnumerable<IMention>)
-  nameWithType.vb: CommandContext.RespondWithFileAsync(String, String, Boolean, DiscordEmbed, IEnumerable(Of IMention))
-- uid: DSharpPlus.CommandsNext.CommandContext.RespondWithFileAsync*
-  name: RespondWithFileAsync
-  href: api/DSharpPlus.CommandsNext.CommandContext.html#DSharpPlus_CommandsNext_CommandContext_RespondWithFileAsync_
-  commentId: Overload:DSharpPlus.CommandsNext.CommandContext.RespondWithFileAsync
-  isSpec: "True"
-  fullName: DSharpPlus.CommandsNext.CommandContext.RespondWithFileAsync
-  nameWithType: CommandContext.RespondWithFileAsync
-- uid: DSharpPlus.CommandsNext.CommandContext.RespondWithFilesAsync(Dictionary{System.String,Stream},System.String,System.Boolean,DiscordEmbed,IEnumerable{IMention})
-  name: RespondWithFilesAsync(Dictionary<String, Stream>, String, Boolean, DiscordEmbed, IEnumerable<IMention>)
-  href: api/DSharpPlus.CommandsNext.CommandContext.html#DSharpPlus_CommandsNext_CommandContext_RespondWithFilesAsync_Dictionary_System_String_Stream__System_String_System_Boolean_DiscordEmbed_IEnumerable_IMention__
-  commentId: M:DSharpPlus.CommandsNext.CommandContext.RespondWithFilesAsync(Dictionary{System.String,Stream},System.String,System.Boolean,DiscordEmbed,IEnumerable{IMention})
-  name.vb: RespondWithFilesAsync(Dictionary(Of String, Stream), String, Boolean, DiscordEmbed, IEnumerable(Of IMention))
-  fullName: DSharpPlus.CommandsNext.CommandContext.RespondWithFilesAsync(Dictionary<System.String, Stream>, System.String, System.Boolean, DiscordEmbed, IEnumerable<IMention>)
-  fullName.vb: DSharpPlus.CommandsNext.CommandContext.RespondWithFilesAsync(Dictionary(Of System.String, Stream), System.String, System.Boolean, DiscordEmbed, IEnumerable(Of IMention))
-  nameWithType: CommandContext.RespondWithFilesAsync(Dictionary<String, Stream>, String, Boolean, DiscordEmbed, IEnumerable<IMention>)
-  nameWithType.vb: CommandContext.RespondWithFilesAsync(Dictionary(Of String, Stream), String, Boolean, DiscordEmbed, IEnumerable(Of IMention))
-- uid: DSharpPlus.CommandsNext.CommandContext.RespondWithFilesAsync*
-  name: RespondWithFilesAsync
-  href: api/DSharpPlus.CommandsNext.CommandContext.html#DSharpPlus_CommandsNext_CommandContext_RespondWithFilesAsync_
-  commentId: Overload:DSharpPlus.CommandsNext.CommandContext.RespondWithFilesAsync
-  isSpec: "True"
-  fullName: DSharpPlus.CommandsNext.CommandContext.RespondWithFilesAsync
-  nameWithType: CommandContext.RespondWithFilesAsync
 - uid: DSharpPlus.CommandsNext.CommandContext.Services
   name: Services
   href: api/DSharpPlus.CommandsNext.CommandContext.html#DSharpPlus_CommandsNext_CommandContext_Services
@@ -5185,15 +5153,30 @@ references:
   commentId: E:DSharpPlus.DiscordClient.Resumed
   fullName: DSharpPlus.DiscordClient.Resumed
   nameWithType: DiscordClient.Resumed
-- uid: DSharpPlus.DiscordClient.SendMessageAsync(DiscordChannel,System.String,System.Boolean,DiscordEmbed,IEnumerable{IMention})
-  name: SendMessageAsync(DiscordChannel, String, Boolean, DiscordEmbed, IEnumerable<IMention>)
-  href: api/DSharpPlus.DiscordClient.html#DSharpPlus_DiscordClient_SendMessageAsync_DiscordChannel_System_String_System_Boolean_DiscordEmbed_IEnumerable_IMention__
-  commentId: M:DSharpPlus.DiscordClient.SendMessageAsync(DiscordChannel,System.String,System.Boolean,DiscordEmbed,IEnumerable{IMention})
-  name.vb: SendMessageAsync(DiscordChannel, String, Boolean, DiscordEmbed, IEnumerable(Of IMention))
-  fullName: DSharpPlus.DiscordClient.SendMessageAsync(DiscordChannel, System.String, System.Boolean, DiscordEmbed, IEnumerable<IMention>)
-  fullName.vb: DSharpPlus.DiscordClient.SendMessageAsync(DiscordChannel, System.String, System.Boolean, DiscordEmbed, IEnumerable(Of IMention))
-  nameWithType: DiscordClient.SendMessageAsync(DiscordChannel, String, Boolean, DiscordEmbed, IEnumerable<IMention>)
-  nameWithType.vb: DiscordClient.SendMessageAsync(DiscordChannel, String, Boolean, DiscordEmbed, IEnumerable(Of IMention))
+- uid: DSharpPlus.DiscordClient.SendMessageAsync(DiscordChannel,DiscordEmbed)
+  name: SendMessageAsync(DiscordChannel, DiscordEmbed)
+  href: api/DSharpPlus.DiscordClient.html#DSharpPlus_DiscordClient_SendMessageAsync_DiscordChannel_DiscordEmbed_
+  commentId: M:DSharpPlus.DiscordClient.SendMessageAsync(DiscordChannel,DiscordEmbed)
+  fullName: DSharpPlus.DiscordClient.SendMessageAsync(DiscordChannel, DiscordEmbed)
+  nameWithType: DiscordClient.SendMessageAsync(DiscordChannel, DiscordEmbed)
+- uid: DSharpPlus.DiscordClient.SendMessageAsync(DiscordChannel,DiscordMessageBuilder)
+  name: SendMessageAsync(DiscordChannel, DiscordMessageBuilder)
+  href: api/DSharpPlus.DiscordClient.html#DSharpPlus_DiscordClient_SendMessageAsync_DiscordChannel_DiscordMessageBuilder_
+  commentId: M:DSharpPlus.DiscordClient.SendMessageAsync(DiscordChannel,DiscordMessageBuilder)
+  fullName: DSharpPlus.DiscordClient.SendMessageAsync(DiscordChannel, DiscordMessageBuilder)
+  nameWithType: DiscordClient.SendMessageAsync(DiscordChannel, DiscordMessageBuilder)
+- uid: DSharpPlus.DiscordClient.SendMessageAsync(DiscordChannel,System.String)
+  name: SendMessageAsync(DiscordChannel, String)
+  href: api/DSharpPlus.DiscordClient.html#DSharpPlus_DiscordClient_SendMessageAsync_DiscordChannel_System_String_
+  commentId: M:DSharpPlus.DiscordClient.SendMessageAsync(DiscordChannel,System.String)
+  fullName: DSharpPlus.DiscordClient.SendMessageAsync(DiscordChannel, System.String)
+  nameWithType: DiscordClient.SendMessageAsync(DiscordChannel, String)
+- uid: DSharpPlus.DiscordClient.SendMessageAsync(DiscordChannel,System.String,DiscordEmbed)
+  name: SendMessageAsync(DiscordChannel, String, DiscordEmbed)
+  href: api/DSharpPlus.DiscordClient.html#DSharpPlus_DiscordClient_SendMessageAsync_DiscordChannel_System_String_DiscordEmbed_
+  commentId: M:DSharpPlus.DiscordClient.SendMessageAsync(DiscordChannel,System.String,DiscordEmbed)
+  fullName: DSharpPlus.DiscordClient.SendMessageAsync(DiscordChannel, System.String, DiscordEmbed)
+  nameWithType: DiscordClient.SendMessageAsync(DiscordChannel, String, DiscordEmbed)
 - uid: DSharpPlus.DiscordClient.SendMessageAsync*
   name: SendMessageAsync
   href: api/DSharpPlus.DiscordClient.html#DSharpPlus_DiscordClient_SendMessageAsync_
@@ -5940,15 +5923,30 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.DiscordRestClient.CreateGuildRoleAsync
   nameWithType: DiscordRestClient.CreateGuildRoleAsync
-- uid: DSharpPlus.DiscordRestClient.CreateMessageAsync(System.UInt64,System.String,System.Nullable{System.Boolean},DiscordEmbed,IEnumerable{IMention})
-  name: CreateMessageAsync(UInt64, String, Nullable<Boolean>, DiscordEmbed, IEnumerable<IMention>)
-  href: api/DSharpPlus.DiscordRestClient.html#DSharpPlus_DiscordRestClient_CreateMessageAsync_System_UInt64_System_String_System_Nullable_System_Boolean__DiscordEmbed_IEnumerable_IMention__
-  commentId: M:DSharpPlus.DiscordRestClient.CreateMessageAsync(System.UInt64,System.String,System.Nullable{System.Boolean},DiscordEmbed,IEnumerable{IMention})
-  name.vb: CreateMessageAsync(UInt64, String, Nullable(Of Boolean), DiscordEmbed, IEnumerable(Of IMention))
-  fullName: DSharpPlus.DiscordRestClient.CreateMessageAsync(System.UInt64, System.String, System.Nullable<System.Boolean>, DiscordEmbed, IEnumerable<IMention>)
-  fullName.vb: DSharpPlus.DiscordRestClient.CreateMessageAsync(System.UInt64, System.String, System.Nullable(Of System.Boolean), DiscordEmbed, IEnumerable(Of IMention))
-  nameWithType: DiscordRestClient.CreateMessageAsync(UInt64, String, Nullable<Boolean>, DiscordEmbed, IEnumerable<IMention>)
-  nameWithType.vb: DiscordRestClient.CreateMessageAsync(UInt64, String, Nullable(Of Boolean), DiscordEmbed, IEnumerable(Of IMention))
+- uid: DSharpPlus.DiscordRestClient.CreateMessageAsync(System.UInt64,DiscordEmbed)
+  name: CreateMessageAsync(UInt64, DiscordEmbed)
+  href: api/DSharpPlus.DiscordRestClient.html#DSharpPlus_DiscordRestClient_CreateMessageAsync_System_UInt64_DiscordEmbed_
+  commentId: M:DSharpPlus.DiscordRestClient.CreateMessageAsync(System.UInt64,DiscordEmbed)
+  fullName: DSharpPlus.DiscordRestClient.CreateMessageAsync(System.UInt64, DiscordEmbed)
+  nameWithType: DiscordRestClient.CreateMessageAsync(UInt64, DiscordEmbed)
+- uid: DSharpPlus.DiscordRestClient.CreateMessageAsync(System.UInt64,DiscordMessageBuilder)
+  name: CreateMessageAsync(UInt64, DiscordMessageBuilder)
+  href: api/DSharpPlus.DiscordRestClient.html#DSharpPlus_DiscordRestClient_CreateMessageAsync_System_UInt64_DiscordMessageBuilder_
+  commentId: M:DSharpPlus.DiscordRestClient.CreateMessageAsync(System.UInt64,DiscordMessageBuilder)
+  fullName: DSharpPlus.DiscordRestClient.CreateMessageAsync(System.UInt64, DiscordMessageBuilder)
+  nameWithType: DiscordRestClient.CreateMessageAsync(UInt64, DiscordMessageBuilder)
+- uid: DSharpPlus.DiscordRestClient.CreateMessageAsync(System.UInt64,System.String)
+  name: CreateMessageAsync(UInt64, String)
+  href: api/DSharpPlus.DiscordRestClient.html#DSharpPlus_DiscordRestClient_CreateMessageAsync_System_UInt64_System_String_
+  commentId: M:DSharpPlus.DiscordRestClient.CreateMessageAsync(System.UInt64,System.String)
+  fullName: DSharpPlus.DiscordRestClient.CreateMessageAsync(System.UInt64, System.String)
+  nameWithType: DiscordRestClient.CreateMessageAsync(UInt64, String)
+- uid: DSharpPlus.DiscordRestClient.CreateMessageAsync(System.UInt64,System.String,DiscordEmbed)
+  name: CreateMessageAsync(UInt64, String, DiscordEmbed)
+  href: api/DSharpPlus.DiscordRestClient.html#DSharpPlus_DiscordRestClient_CreateMessageAsync_System_UInt64_System_String_DiscordEmbed_
+  commentId: M:DSharpPlus.DiscordRestClient.CreateMessageAsync(System.UInt64,System.String,DiscordEmbed)
+  fullName: DSharpPlus.DiscordRestClient.CreateMessageAsync(System.UInt64, System.String, DiscordEmbed)
+  nameWithType: DiscordRestClient.CreateMessageAsync(UInt64, String, DiscordEmbed)
 - uid: DSharpPlus.DiscordRestClient.CreateMessageAsync*
   name: CreateMessageAsync
   href: api/DSharpPlus.DiscordRestClient.html#DSharpPlus_DiscordRestClient_CreateMessageAsync_
@@ -6192,15 +6190,30 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.DiscordRestClient.EditChannelPermissionsAsync
   nameWithType: DiscordRestClient.EditChannelPermissionsAsync
-- uid: DSharpPlus.DiscordRestClient.EditMessageAsync(System.UInt64,System.UInt64,Optional{System.String},Optional{DiscordEmbed})
-  name: EditMessageAsync(UInt64, UInt64, Optional<String>, Optional<DiscordEmbed>)
-  href: api/DSharpPlus.DiscordRestClient.html#DSharpPlus_DiscordRestClient_EditMessageAsync_System_UInt64_System_UInt64_Optional_System_String__Optional_DiscordEmbed__
-  commentId: M:DSharpPlus.DiscordRestClient.EditMessageAsync(System.UInt64,System.UInt64,Optional{System.String},Optional{DiscordEmbed})
-  name.vb: EditMessageAsync(UInt64, UInt64, Optional(Of String), Optional(Of DiscordEmbed))
-  fullName: DSharpPlus.DiscordRestClient.EditMessageAsync(System.UInt64, System.UInt64, Optional<System.String>, Optional<DiscordEmbed>)
-  fullName.vb: DSharpPlus.DiscordRestClient.EditMessageAsync(System.UInt64, System.UInt64, Optional(Of System.String), Optional(Of DiscordEmbed))
-  nameWithType: DiscordRestClient.EditMessageAsync(UInt64, UInt64, Optional<String>, Optional<DiscordEmbed>)
-  nameWithType.vb: DiscordRestClient.EditMessageAsync(UInt64, UInt64, Optional(Of String), Optional(Of DiscordEmbed))
+- uid: DSharpPlus.DiscordRestClient.EditMessageAsync(System.UInt64,System.UInt64,DiscordMessageBuilder)
+  name: EditMessageAsync(UInt64, UInt64, DiscordMessageBuilder)
+  href: api/DSharpPlus.DiscordRestClient.html#DSharpPlus_DiscordRestClient_EditMessageAsync_System_UInt64_System_UInt64_DiscordMessageBuilder_
+  commentId: M:DSharpPlus.DiscordRestClient.EditMessageAsync(System.UInt64,System.UInt64,DiscordMessageBuilder)
+  fullName: DSharpPlus.DiscordRestClient.EditMessageAsync(System.UInt64, System.UInt64, DiscordMessageBuilder)
+  nameWithType: DiscordRestClient.EditMessageAsync(UInt64, UInt64, DiscordMessageBuilder)
+- uid: DSharpPlus.DiscordRestClient.EditMessageAsync(System.UInt64,System.UInt64,Optional{DiscordEmbed})
+  name: EditMessageAsync(UInt64, UInt64, Optional<DiscordEmbed>)
+  href: api/DSharpPlus.DiscordRestClient.html#DSharpPlus_DiscordRestClient_EditMessageAsync_System_UInt64_System_UInt64_Optional_DiscordEmbed__
+  commentId: M:DSharpPlus.DiscordRestClient.EditMessageAsync(System.UInt64,System.UInt64,Optional{DiscordEmbed})
+  name.vb: EditMessageAsync(UInt64, UInt64, Optional(Of DiscordEmbed))
+  fullName: DSharpPlus.DiscordRestClient.EditMessageAsync(System.UInt64, System.UInt64, Optional<DiscordEmbed>)
+  fullName.vb: DSharpPlus.DiscordRestClient.EditMessageAsync(System.UInt64, System.UInt64, Optional(Of DiscordEmbed))
+  nameWithType: DiscordRestClient.EditMessageAsync(UInt64, UInt64, Optional<DiscordEmbed>)
+  nameWithType.vb: DiscordRestClient.EditMessageAsync(UInt64, UInt64, Optional(Of DiscordEmbed))
+- uid: DSharpPlus.DiscordRestClient.EditMessageAsync(System.UInt64,System.UInt64,Optional{System.String})
+  name: EditMessageAsync(UInt64, UInt64, Optional<String>)
+  href: api/DSharpPlus.DiscordRestClient.html#DSharpPlus_DiscordRestClient_EditMessageAsync_System_UInt64_System_UInt64_Optional_System_String__
+  commentId: M:DSharpPlus.DiscordRestClient.EditMessageAsync(System.UInt64,System.UInt64,Optional{System.String})
+  name.vb: EditMessageAsync(UInt64, UInt64, Optional(Of String))
+  fullName: DSharpPlus.DiscordRestClient.EditMessageAsync(System.UInt64, System.UInt64, Optional<System.String>)
+  fullName.vb: DSharpPlus.DiscordRestClient.EditMessageAsync(System.UInt64, System.UInt64, Optional(Of System.String))
+  nameWithType: DiscordRestClient.EditMessageAsync(UInt64, UInt64, Optional<String>)
+  nameWithType.vb: DiscordRestClient.EditMessageAsync(UInt64, UInt64, Optional(Of String))
 - uid: DSharpPlus.DiscordRestClient.EditMessageAsync*
   name: EditMessageAsync
   href: api/DSharpPlus.DiscordRestClient.html#DSharpPlus_DiscordRestClient_EditMessageAsync_
@@ -7061,38 +7074,6 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.DiscordRestClient.UpdateRolePositionAsync
   nameWithType: DiscordRestClient.UpdateRolePositionAsync
-- uid: DSharpPlus.DiscordRestClient.UploadFileAsync(System.UInt64,Stream,System.String,System.String,System.Nullable{System.Boolean},DiscordEmbed,IEnumerable{IMention})
-  name: UploadFileAsync(UInt64, Stream, String, String, Nullable<Boolean>, DiscordEmbed, IEnumerable<IMention>)
-  href: api/DSharpPlus.DiscordRestClient.html#DSharpPlus_DiscordRestClient_UploadFileAsync_System_UInt64_Stream_System_String_System_String_System_Nullable_System_Boolean__DiscordEmbed_IEnumerable_IMention__
-  commentId: M:DSharpPlus.DiscordRestClient.UploadFileAsync(System.UInt64,Stream,System.String,System.String,System.Nullable{System.Boolean},DiscordEmbed,IEnumerable{IMention})
-  name.vb: UploadFileAsync(UInt64, Stream, String, String, Nullable(Of Boolean), DiscordEmbed, IEnumerable(Of IMention))
-  fullName: DSharpPlus.DiscordRestClient.UploadFileAsync(System.UInt64, Stream, System.String, System.String, System.Nullable<System.Boolean>, DiscordEmbed, IEnumerable<IMention>)
-  fullName.vb: DSharpPlus.DiscordRestClient.UploadFileAsync(System.UInt64, Stream, System.String, System.String, System.Nullable(Of System.Boolean), DiscordEmbed, IEnumerable(Of IMention))
-  nameWithType: DiscordRestClient.UploadFileAsync(UInt64, Stream, String, String, Nullable<Boolean>, DiscordEmbed, IEnumerable<IMention>)
-  nameWithType.vb: DiscordRestClient.UploadFileAsync(UInt64, Stream, String, String, Nullable(Of Boolean), DiscordEmbed, IEnumerable(Of IMention))
-- uid: DSharpPlus.DiscordRestClient.UploadFileAsync*
-  name: UploadFileAsync
-  href: api/DSharpPlus.DiscordRestClient.html#DSharpPlus_DiscordRestClient_UploadFileAsync_
-  commentId: Overload:DSharpPlus.DiscordRestClient.UploadFileAsync
-  isSpec: "True"
-  fullName: DSharpPlus.DiscordRestClient.UploadFileAsync
-  nameWithType: DiscordRestClient.UploadFileAsync
-- uid: DSharpPlus.DiscordRestClient.UploadFilesAsync(System.UInt64,Dictionary{System.String,Stream},System.String,System.Nullable{System.Boolean},DiscordEmbed,IEnumerable{IMention})
-  name: UploadFilesAsync(UInt64, Dictionary<String, Stream>, String, Nullable<Boolean>, DiscordEmbed, IEnumerable<IMention>)
-  href: api/DSharpPlus.DiscordRestClient.html#DSharpPlus_DiscordRestClient_UploadFilesAsync_System_UInt64_Dictionary_System_String_Stream__System_String_System_Nullable_System_Boolean__DiscordEmbed_IEnumerable_IMention__
-  commentId: M:DSharpPlus.DiscordRestClient.UploadFilesAsync(System.UInt64,Dictionary{System.String,Stream},System.String,System.Nullable{System.Boolean},DiscordEmbed,IEnumerable{IMention})
-  name.vb: UploadFilesAsync(UInt64, Dictionary(Of String, Stream), String, Nullable(Of Boolean), DiscordEmbed, IEnumerable(Of IMention))
-  fullName: DSharpPlus.DiscordRestClient.UploadFilesAsync(System.UInt64, Dictionary<System.String, Stream>, System.String, System.Nullable<System.Boolean>, DiscordEmbed, IEnumerable<IMention>)
-  fullName.vb: DSharpPlus.DiscordRestClient.UploadFilesAsync(System.UInt64, Dictionary(Of System.String, Stream), System.String, System.Nullable(Of System.Boolean), DiscordEmbed, IEnumerable(Of IMention))
-  nameWithType: DiscordRestClient.UploadFilesAsync(UInt64, Dictionary<String, Stream>, String, Nullable<Boolean>, DiscordEmbed, IEnumerable<IMention>)
-  nameWithType.vb: DiscordRestClient.UploadFilesAsync(UInt64, Dictionary(Of String, Stream), String, Nullable(Of Boolean), DiscordEmbed, IEnumerable(Of IMention))
-- uid: DSharpPlus.DiscordRestClient.UploadFilesAsync*
-  name: UploadFilesAsync
-  href: api/DSharpPlus.DiscordRestClient.html#DSharpPlus_DiscordRestClient_UploadFilesAsync_
-  commentId: Overload:DSharpPlus.DiscordRestClient.UploadFilesAsync
-  isSpec: "True"
-  fullName: DSharpPlus.DiscordRestClient.UploadFilesAsync
-  nameWithType: DiscordRestClient.UploadFilesAsync
 - uid: DSharpPlus.DiscordShardedClient
   name: DiscordShardedClient
   href: api/DSharpPlus.DiscordShardedClient.html
@@ -10294,49 +10275,30 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.Entities.DiscordChannel.Position
   nameWithType: DiscordChannel.Position
-- uid: DSharpPlus.Entities.DiscordChannel.SendFileAsync(FileStream,System.String,System.Boolean,DSharpPlus.Entities.DiscordEmbed,IEnumerable{DSharpPlus.Entities.IMention})
-  name: SendFileAsync(FileStream, String, Boolean, DiscordEmbed, IEnumerable<IMention>)
-  href: api/DSharpPlus.Entities.DiscordChannel.html#DSharpPlus_Entities_DiscordChannel_SendFileAsync_FileStream_System_String_System_Boolean_DSharpPlus_Entities_DiscordEmbed_IEnumerable_DSharpPlus_Entities_IMention__
-  commentId: M:DSharpPlus.Entities.DiscordChannel.SendFileAsync(FileStream,System.String,System.Boolean,DSharpPlus.Entities.DiscordEmbed,IEnumerable{DSharpPlus.Entities.IMention})
-  name.vb: SendFileAsync(FileStream, String, Boolean, DiscordEmbed, IEnumerable(Of IMention))
-  fullName: DSharpPlus.Entities.DiscordChannel.SendFileAsync(FileStream, System.String, System.Boolean, DSharpPlus.Entities.DiscordEmbed, IEnumerable<DSharpPlus.Entities.IMention>)
-  fullName.vb: DSharpPlus.Entities.DiscordChannel.SendFileAsync(FileStream, System.String, System.Boolean, DSharpPlus.Entities.DiscordEmbed, IEnumerable(Of DSharpPlus.Entities.IMention))
-  nameWithType: DiscordChannel.SendFileAsync(FileStream, String, Boolean, DiscordEmbed, IEnumerable<IMention>)
-  nameWithType.vb: DiscordChannel.SendFileAsync(FileStream, String, Boolean, DiscordEmbed, IEnumerable(Of IMention))
-- uid: DSharpPlus.Entities.DiscordChannel.SendFileAsync(System.String,Stream,System.String,System.Boolean,DSharpPlus.Entities.DiscordEmbed,IEnumerable{DSharpPlus.Entities.IMention})
-  name: SendFileAsync(String, Stream, String, Boolean, DiscordEmbed, IEnumerable<IMention>)
-  href: api/DSharpPlus.Entities.DiscordChannel.html#DSharpPlus_Entities_DiscordChannel_SendFileAsync_System_String_Stream_System_String_System_Boolean_DSharpPlus_Entities_DiscordEmbed_IEnumerable_DSharpPlus_Entities_IMention__
-  commentId: M:DSharpPlus.Entities.DiscordChannel.SendFileAsync(System.String,Stream,System.String,System.Boolean,DSharpPlus.Entities.DiscordEmbed,IEnumerable{DSharpPlus.Entities.IMention})
-  name.vb: SendFileAsync(String, Stream, String, Boolean, DiscordEmbed, IEnumerable(Of IMention))
-  fullName: DSharpPlus.Entities.DiscordChannel.SendFileAsync(System.String, Stream, System.String, System.Boolean, DSharpPlus.Entities.DiscordEmbed, IEnumerable<DSharpPlus.Entities.IMention>)
-  fullName.vb: DSharpPlus.Entities.DiscordChannel.SendFileAsync(System.String, Stream, System.String, System.Boolean, DSharpPlus.Entities.DiscordEmbed, IEnumerable(Of DSharpPlus.Entities.IMention))
-  nameWithType: DiscordChannel.SendFileAsync(String, Stream, String, Boolean, DiscordEmbed, IEnumerable<IMention>)
-  nameWithType.vb: DiscordChannel.SendFileAsync(String, Stream, String, Boolean, DiscordEmbed, IEnumerable(Of IMention))
-- uid: DSharpPlus.Entities.DiscordChannel.SendFileAsync(System.String,System.String,System.Boolean,DSharpPlus.Entities.DiscordEmbed,IEnumerable{DSharpPlus.Entities.IMention})
-  name: SendFileAsync(String, String, Boolean, DiscordEmbed, IEnumerable<IMention>)
-  href: api/DSharpPlus.Entities.DiscordChannel.html#DSharpPlus_Entities_DiscordChannel_SendFileAsync_System_String_System_String_System_Boolean_DSharpPlus_Entities_DiscordEmbed_IEnumerable_DSharpPlus_Entities_IMention__
-  commentId: M:DSharpPlus.Entities.DiscordChannel.SendFileAsync(System.String,System.String,System.Boolean,DSharpPlus.Entities.DiscordEmbed,IEnumerable{DSharpPlus.Entities.IMention})
-  name.vb: SendFileAsync(String, String, Boolean, DiscordEmbed, IEnumerable(Of IMention))
-  fullName: DSharpPlus.Entities.DiscordChannel.SendFileAsync(System.String, System.String, System.Boolean, DSharpPlus.Entities.DiscordEmbed, IEnumerable<DSharpPlus.Entities.IMention>)
-  fullName.vb: DSharpPlus.Entities.DiscordChannel.SendFileAsync(System.String, System.String, System.Boolean, DSharpPlus.Entities.DiscordEmbed, IEnumerable(Of DSharpPlus.Entities.IMention))
-  nameWithType: DiscordChannel.SendFileAsync(String, String, Boolean, DiscordEmbed, IEnumerable<IMention>)
-  nameWithType.vb: DiscordChannel.SendFileAsync(String, String, Boolean, DiscordEmbed, IEnumerable(Of IMention))
-- uid: DSharpPlus.Entities.DiscordChannel.SendFileAsync*
-  name: SendFileAsync
-  href: api/DSharpPlus.Entities.DiscordChannel.html#DSharpPlus_Entities_DiscordChannel_SendFileAsync_
-  commentId: Overload:DSharpPlus.Entities.DiscordChannel.SendFileAsync
-  isSpec: "True"
-  fullName: DSharpPlus.Entities.DiscordChannel.SendFileAsync
-  nameWithType: DiscordChannel.SendFileAsync
-- uid: DSharpPlus.Entities.DiscordChannel.SendMessageAsync(System.String,System.Boolean,DSharpPlus.Entities.DiscordEmbed,IEnumerable{DSharpPlus.Entities.IMention})
-  name: SendMessageAsync(String, Boolean, DiscordEmbed, IEnumerable<IMention>)
-  href: api/DSharpPlus.Entities.DiscordChannel.html#DSharpPlus_Entities_DiscordChannel_SendMessageAsync_System_String_System_Boolean_DSharpPlus_Entities_DiscordEmbed_IEnumerable_DSharpPlus_Entities_IMention__
-  commentId: M:DSharpPlus.Entities.DiscordChannel.SendMessageAsync(System.String,System.Boolean,DSharpPlus.Entities.DiscordEmbed,IEnumerable{DSharpPlus.Entities.IMention})
-  name.vb: SendMessageAsync(String, Boolean, DiscordEmbed, IEnumerable(Of IMention))
-  fullName: DSharpPlus.Entities.DiscordChannel.SendMessageAsync(System.String, System.Boolean, DSharpPlus.Entities.DiscordEmbed, IEnumerable<DSharpPlus.Entities.IMention>)
-  fullName.vb: DSharpPlus.Entities.DiscordChannel.SendMessageAsync(System.String, System.Boolean, DSharpPlus.Entities.DiscordEmbed, IEnumerable(Of DSharpPlus.Entities.IMention))
-  nameWithType: DiscordChannel.SendMessageAsync(String, Boolean, DiscordEmbed, IEnumerable<IMention>)
-  nameWithType.vb: DiscordChannel.SendMessageAsync(String, Boolean, DiscordEmbed, IEnumerable(Of IMention))
+- uid: DSharpPlus.Entities.DiscordChannel.SendMessageAsync(DSharpPlus.Entities.DiscordEmbed)
+  name: SendMessageAsync(DiscordEmbed)
+  href: api/DSharpPlus.Entities.DiscordChannel.html#DSharpPlus_Entities_DiscordChannel_SendMessageAsync_DSharpPlus_Entities_DiscordEmbed_
+  commentId: M:DSharpPlus.Entities.DiscordChannel.SendMessageAsync(DSharpPlus.Entities.DiscordEmbed)
+  fullName: DSharpPlus.Entities.DiscordChannel.SendMessageAsync(DSharpPlus.Entities.DiscordEmbed)
+  nameWithType: DiscordChannel.SendMessageAsync(DiscordEmbed)
+- uid: DSharpPlus.Entities.DiscordChannel.SendMessageAsync(DSharpPlus.Entities.DiscordMessageBuilder)
+  name: SendMessageAsync(DiscordMessageBuilder)
+  href: api/DSharpPlus.Entities.DiscordChannel.html#DSharpPlus_Entities_DiscordChannel_SendMessageAsync_DSharpPlus_Entities_DiscordMessageBuilder_
+  commentId: M:DSharpPlus.Entities.DiscordChannel.SendMessageAsync(DSharpPlus.Entities.DiscordMessageBuilder)
+  fullName: DSharpPlus.Entities.DiscordChannel.SendMessageAsync(DSharpPlus.Entities.DiscordMessageBuilder)
+  nameWithType: DiscordChannel.SendMessageAsync(DiscordMessageBuilder)
+- uid: DSharpPlus.Entities.DiscordChannel.SendMessageAsync(System.String)
+  name: SendMessageAsync(String)
+  href: api/DSharpPlus.Entities.DiscordChannel.html#DSharpPlus_Entities_DiscordChannel_SendMessageAsync_System_String_
+  commentId: M:DSharpPlus.Entities.DiscordChannel.SendMessageAsync(System.String)
+  fullName: DSharpPlus.Entities.DiscordChannel.SendMessageAsync(System.String)
+  nameWithType: DiscordChannel.SendMessageAsync(String)
+- uid: DSharpPlus.Entities.DiscordChannel.SendMessageAsync(System.String,DSharpPlus.Entities.DiscordEmbed)
+  name: SendMessageAsync(String, DiscordEmbed)
+  href: api/DSharpPlus.Entities.DiscordChannel.html#DSharpPlus_Entities_DiscordChannel_SendMessageAsync_System_String_DSharpPlus_Entities_DiscordEmbed_
+  commentId: M:DSharpPlus.Entities.DiscordChannel.SendMessageAsync(System.String,DSharpPlus.Entities.DiscordEmbed)
+  fullName: DSharpPlus.Entities.DiscordChannel.SendMessageAsync(System.String, DSharpPlus.Entities.DiscordEmbed)
+  nameWithType: DiscordChannel.SendMessageAsync(String, DiscordEmbed)
 - uid: DSharpPlus.Entities.DiscordChannel.SendMessageAsync*
   name: SendMessageAsync
   href: api/DSharpPlus.Entities.DiscordChannel.html#DSharpPlus_Entities_DiscordChannel_SendMessageAsync_
@@ -10344,22 +10306,6 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.Entities.DiscordChannel.SendMessageAsync
   nameWithType: DiscordChannel.SendMessageAsync
-- uid: DSharpPlus.Entities.DiscordChannel.SendMultipleFilesAsync(Dictionary{System.String,Stream},System.String,System.Boolean,DSharpPlus.Entities.DiscordEmbed,IEnumerable{DSharpPlus.Entities.IMention})
-  name: SendMultipleFilesAsync(Dictionary<String, Stream>, String, Boolean, DiscordEmbed, IEnumerable<IMention>)
-  href: api/DSharpPlus.Entities.DiscordChannel.html#DSharpPlus_Entities_DiscordChannel_SendMultipleFilesAsync_Dictionary_System_String_Stream__System_String_System_Boolean_DSharpPlus_Entities_DiscordEmbed_IEnumerable_DSharpPlus_Entities_IMention__
-  commentId: M:DSharpPlus.Entities.DiscordChannel.SendMultipleFilesAsync(Dictionary{System.String,Stream},System.String,System.Boolean,DSharpPlus.Entities.DiscordEmbed,IEnumerable{DSharpPlus.Entities.IMention})
-  name.vb: SendMultipleFilesAsync(Dictionary(Of String, Stream), String, Boolean, DiscordEmbed, IEnumerable(Of IMention))
-  fullName: DSharpPlus.Entities.DiscordChannel.SendMultipleFilesAsync(Dictionary<System.String, Stream>, System.String, System.Boolean, DSharpPlus.Entities.DiscordEmbed, IEnumerable<DSharpPlus.Entities.IMention>)
-  fullName.vb: DSharpPlus.Entities.DiscordChannel.SendMultipleFilesAsync(Dictionary(Of System.String, Stream), System.String, System.Boolean, DSharpPlus.Entities.DiscordEmbed, IEnumerable(Of DSharpPlus.Entities.IMention))
-  nameWithType: DiscordChannel.SendMultipleFilesAsync(Dictionary<String, Stream>, String, Boolean, DiscordEmbed, IEnumerable<IMention>)
-  nameWithType.vb: DiscordChannel.SendMultipleFilesAsync(Dictionary(Of String, Stream), String, Boolean, DiscordEmbed, IEnumerable(Of IMention))
-- uid: DSharpPlus.Entities.DiscordChannel.SendMultipleFilesAsync*
-  name: SendMultipleFilesAsync
-  href: api/DSharpPlus.Entities.DiscordChannel.html#DSharpPlus_Entities_DiscordChannel_SendMultipleFilesAsync_
-  commentId: Overload:DSharpPlus.Entities.DiscordChannel.SendMultipleFilesAsync
-  isSpec: "True"
-  fullName: DSharpPlus.Entities.DiscordChannel.SendMultipleFilesAsync
-  nameWithType: DiscordChannel.SendMultipleFilesAsync
 - uid: DSharpPlus.Entities.DiscordChannel.Topic
   name: Topic
   href: api/DSharpPlus.Entities.DiscordChannel.html#DSharpPlus_Entities_DiscordChannel_Topic
@@ -12528,6 +12474,19 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.Entities.DiscordEmoji.IsAnimated
   nameWithType: DiscordEmoji.IsAnimated
+- uid: DSharpPlus.Entities.DiscordEmoji.IsAvailable
+  name: IsAvailable
+  href: api/DSharpPlus.Entities.DiscordEmoji.html#DSharpPlus_Entities_DiscordEmoji_IsAvailable
+  commentId: P:DSharpPlus.Entities.DiscordEmoji.IsAvailable
+  fullName: DSharpPlus.Entities.DiscordEmoji.IsAvailable
+  nameWithType: DiscordEmoji.IsAvailable
+- uid: DSharpPlus.Entities.DiscordEmoji.IsAvailable*
+  name: IsAvailable
+  href: api/DSharpPlus.Entities.DiscordEmoji.html#DSharpPlus_Entities_DiscordEmoji_IsAvailable_
+  commentId: Overload:DSharpPlus.Entities.DiscordEmoji.IsAvailable
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordEmoji.IsAvailable
+  nameWithType: DiscordEmoji.IsAvailable
 - uid: DSharpPlus.Entities.DiscordEmoji.IsManaged
   name: IsManaged
   href: api/DSharpPlus.Entities.DiscordEmoji.html#DSharpPlus_Entities_DiscordEmoji_IsManaged
@@ -13725,6 +13684,19 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.Entities.DiscordGuild.Owner
   nameWithType: DiscordGuild.Owner
+- uid: DSharpPlus.Entities.DiscordGuild.OwnerId
+  name: OwnerId
+  href: api/DSharpPlus.Entities.DiscordGuild.html#DSharpPlus_Entities_DiscordGuild_OwnerId
+  commentId: P:DSharpPlus.Entities.DiscordGuild.OwnerId
+  fullName: DSharpPlus.Entities.DiscordGuild.OwnerId
+  nameWithType: DiscordGuild.OwnerId
+- uid: DSharpPlus.Entities.DiscordGuild.OwnerId*
+  name: OwnerId
+  href: api/DSharpPlus.Entities.DiscordGuild.html#DSharpPlus_Entities_DiscordGuild_OwnerId_
+  commentId: Overload:DSharpPlus.Entities.DiscordGuild.OwnerId
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordGuild.OwnerId
+  nameWithType: DiscordGuild.OwnerId
 - uid: DSharpPlus.Entities.DiscordGuild.Permissions
   name: Permissions
   href: api/DSharpPlus.Entities.DiscordGuild.html#DSharpPlus_Entities_DiscordGuild_Permissions
@@ -15132,37 +15104,30 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.Entities.DiscordMember.Roles
   nameWithType: DiscordMember.Roles
-- uid: DSharpPlus.Entities.DiscordMember.SendFileAsync(FileStream,System.String,System.Boolean,DSharpPlus.Entities.DiscordEmbed)
-  name: SendFileAsync(FileStream, String, Boolean, DiscordEmbed)
-  href: api/DSharpPlus.Entities.DiscordMember.html#DSharpPlus_Entities_DiscordMember_SendFileAsync_FileStream_System_String_System_Boolean_DSharpPlus_Entities_DiscordEmbed_
-  commentId: M:DSharpPlus.Entities.DiscordMember.SendFileAsync(FileStream,System.String,System.Boolean,DSharpPlus.Entities.DiscordEmbed)
-  fullName: DSharpPlus.Entities.DiscordMember.SendFileAsync(FileStream, System.String, System.Boolean, DSharpPlus.Entities.DiscordEmbed)
-  nameWithType: DiscordMember.SendFileAsync(FileStream, String, Boolean, DiscordEmbed)
-- uid: DSharpPlus.Entities.DiscordMember.SendFileAsync(System.String,Stream,System.String,System.Boolean,DSharpPlus.Entities.DiscordEmbed)
-  name: SendFileAsync(String, Stream, String, Boolean, DiscordEmbed)
-  href: api/DSharpPlus.Entities.DiscordMember.html#DSharpPlus_Entities_DiscordMember_SendFileAsync_System_String_Stream_System_String_System_Boolean_DSharpPlus_Entities_DiscordEmbed_
-  commentId: M:DSharpPlus.Entities.DiscordMember.SendFileAsync(System.String,Stream,System.String,System.Boolean,DSharpPlus.Entities.DiscordEmbed)
-  fullName: DSharpPlus.Entities.DiscordMember.SendFileAsync(System.String, Stream, System.String, System.Boolean, DSharpPlus.Entities.DiscordEmbed)
-  nameWithType: DiscordMember.SendFileAsync(String, Stream, String, Boolean, DiscordEmbed)
-- uid: DSharpPlus.Entities.DiscordMember.SendFileAsync(System.String,System.String,System.Boolean,DSharpPlus.Entities.DiscordEmbed)
-  name: SendFileAsync(String, String, Boolean, DiscordEmbed)
-  href: api/DSharpPlus.Entities.DiscordMember.html#DSharpPlus_Entities_DiscordMember_SendFileAsync_System_String_System_String_System_Boolean_DSharpPlus_Entities_DiscordEmbed_
-  commentId: M:DSharpPlus.Entities.DiscordMember.SendFileAsync(System.String,System.String,System.Boolean,DSharpPlus.Entities.DiscordEmbed)
-  fullName: DSharpPlus.Entities.DiscordMember.SendFileAsync(System.String, System.String, System.Boolean, DSharpPlus.Entities.DiscordEmbed)
-  nameWithType: DiscordMember.SendFileAsync(String, String, Boolean, DiscordEmbed)
-- uid: DSharpPlus.Entities.DiscordMember.SendFileAsync*
-  name: SendFileAsync
-  href: api/DSharpPlus.Entities.DiscordMember.html#DSharpPlus_Entities_DiscordMember_SendFileAsync_
-  commentId: Overload:DSharpPlus.Entities.DiscordMember.SendFileAsync
-  isSpec: "True"
-  fullName: DSharpPlus.Entities.DiscordMember.SendFileAsync
-  nameWithType: DiscordMember.SendFileAsync
-- uid: DSharpPlus.Entities.DiscordMember.SendMessageAsync(System.String,System.Boolean,DSharpPlus.Entities.DiscordEmbed)
-  name: SendMessageAsync(String, Boolean, DiscordEmbed)
-  href: api/DSharpPlus.Entities.DiscordMember.html#DSharpPlus_Entities_DiscordMember_SendMessageAsync_System_String_System_Boolean_DSharpPlus_Entities_DiscordEmbed_
-  commentId: M:DSharpPlus.Entities.DiscordMember.SendMessageAsync(System.String,System.Boolean,DSharpPlus.Entities.DiscordEmbed)
-  fullName: DSharpPlus.Entities.DiscordMember.SendMessageAsync(System.String, System.Boolean, DSharpPlus.Entities.DiscordEmbed)
-  nameWithType: DiscordMember.SendMessageAsync(String, Boolean, DiscordEmbed)
+- uid: DSharpPlus.Entities.DiscordMember.SendMessageAsync(DSharpPlus.Entities.DiscordEmbed)
+  name: SendMessageAsync(DiscordEmbed)
+  href: api/DSharpPlus.Entities.DiscordMember.html#DSharpPlus_Entities_DiscordMember_SendMessageAsync_DSharpPlus_Entities_DiscordEmbed_
+  commentId: M:DSharpPlus.Entities.DiscordMember.SendMessageAsync(DSharpPlus.Entities.DiscordEmbed)
+  fullName: DSharpPlus.Entities.DiscordMember.SendMessageAsync(DSharpPlus.Entities.DiscordEmbed)
+  nameWithType: DiscordMember.SendMessageAsync(DiscordEmbed)
+- uid: DSharpPlus.Entities.DiscordMember.SendMessageAsync(DSharpPlus.Entities.DiscordMessageBuilder)
+  name: SendMessageAsync(DiscordMessageBuilder)
+  href: api/DSharpPlus.Entities.DiscordMember.html#DSharpPlus_Entities_DiscordMember_SendMessageAsync_DSharpPlus_Entities_DiscordMessageBuilder_
+  commentId: M:DSharpPlus.Entities.DiscordMember.SendMessageAsync(DSharpPlus.Entities.DiscordMessageBuilder)
+  fullName: DSharpPlus.Entities.DiscordMember.SendMessageAsync(DSharpPlus.Entities.DiscordMessageBuilder)
+  nameWithType: DiscordMember.SendMessageAsync(DiscordMessageBuilder)
+- uid: DSharpPlus.Entities.DiscordMember.SendMessageAsync(System.String)
+  name: SendMessageAsync(String)
+  href: api/DSharpPlus.Entities.DiscordMember.html#DSharpPlus_Entities_DiscordMember_SendMessageAsync_System_String_
+  commentId: M:DSharpPlus.Entities.DiscordMember.SendMessageAsync(System.String)
+  fullName: DSharpPlus.Entities.DiscordMember.SendMessageAsync(System.String)
+  nameWithType: DiscordMember.SendMessageAsync(String)
+- uid: DSharpPlus.Entities.DiscordMember.SendMessageAsync(System.String,DSharpPlus.Entities.DiscordEmbed)
+  name: SendMessageAsync(String, DiscordEmbed)
+  href: api/DSharpPlus.Entities.DiscordMember.html#DSharpPlus_Entities_DiscordMember_SendMessageAsync_System_String_DSharpPlus_Entities_DiscordEmbed_
+  commentId: M:DSharpPlus.Entities.DiscordMember.SendMessageAsync(System.String,DSharpPlus.Entities.DiscordEmbed)
+  fullName: DSharpPlus.Entities.DiscordMember.SendMessageAsync(System.String, DSharpPlus.Entities.DiscordEmbed)
+  nameWithType: DiscordMember.SendMessageAsync(String, DiscordEmbed)
 - uid: DSharpPlus.Entities.DiscordMember.SendMessageAsync*
   name: SendMessageAsync
   href: api/DSharpPlus.Entities.DiscordMember.html#DSharpPlus_Entities_DiscordMember_SendMessageAsync_
@@ -15170,22 +15135,6 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.Entities.DiscordMember.SendMessageAsync
   nameWithType: DiscordMember.SendMessageAsync
-- uid: DSharpPlus.Entities.DiscordMember.SendMultipleFilesAsync(Dictionary{System.String,Stream},System.String,System.Boolean,DSharpPlus.Entities.DiscordEmbed)
-  name: SendMultipleFilesAsync(Dictionary<String, Stream>, String, Boolean, DiscordEmbed)
-  href: api/DSharpPlus.Entities.DiscordMember.html#DSharpPlus_Entities_DiscordMember_SendMultipleFilesAsync_Dictionary_System_String_Stream__System_String_System_Boolean_DSharpPlus_Entities_DiscordEmbed_
-  commentId: M:DSharpPlus.Entities.DiscordMember.SendMultipleFilesAsync(Dictionary{System.String,Stream},System.String,System.Boolean,DSharpPlus.Entities.DiscordEmbed)
-  name.vb: SendMultipleFilesAsync(Dictionary(Of String, Stream), String, Boolean, DiscordEmbed)
-  fullName: DSharpPlus.Entities.DiscordMember.SendMultipleFilesAsync(Dictionary<System.String, Stream>, System.String, System.Boolean, DSharpPlus.Entities.DiscordEmbed)
-  fullName.vb: DSharpPlus.Entities.DiscordMember.SendMultipleFilesAsync(Dictionary(Of System.String, Stream), System.String, System.Boolean, DSharpPlus.Entities.DiscordEmbed)
-  nameWithType: DiscordMember.SendMultipleFilesAsync(Dictionary<String, Stream>, String, Boolean, DiscordEmbed)
-  nameWithType.vb: DiscordMember.SendMultipleFilesAsync(Dictionary(Of String, Stream), String, Boolean, DiscordEmbed)
-- uid: DSharpPlus.Entities.DiscordMember.SendMultipleFilesAsync*
-  name: SendMultipleFilesAsync
-  href: api/DSharpPlus.Entities.DiscordMember.html#DSharpPlus_Entities_DiscordMember_SendMultipleFilesAsync_
-  commentId: Overload:DSharpPlus.Entities.DiscordMember.SendMultipleFilesAsync
-  isSpec: "True"
-  fullName: DSharpPlus.Entities.DiscordMember.SendMultipleFilesAsync
-  nameWithType: DiscordMember.SendMultipleFilesAsync
 - uid: DSharpPlus.Entities.DiscordMember.SetDeafAsync(System.Boolean,System.String)
   name: SetDeafAsync(Boolean, String)
   href: api/DSharpPlus.Entities.DiscordMember.html#DSharpPlus_Entities_DiscordMember_SetDeafAsync_System_Boolean_System_String_
@@ -15643,6 +15592,30 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.Entities.DiscordMessage.MessageType
   nameWithType: DiscordMessage.MessageType
+- uid: DSharpPlus.Entities.DiscordMessage.ModifyAsync(DSharpPlus.Entities.DiscordMessageBuilder)
+  name: ModifyAsync(DiscordMessageBuilder)
+  href: api/DSharpPlus.Entities.DiscordMessage.html#DSharpPlus_Entities_DiscordMessage_ModifyAsync_DSharpPlus_Entities_DiscordMessageBuilder_
+  commentId: M:DSharpPlus.Entities.DiscordMessage.ModifyAsync(DSharpPlus.Entities.DiscordMessageBuilder)
+  fullName: DSharpPlus.Entities.DiscordMessage.ModifyAsync(DSharpPlus.Entities.DiscordMessageBuilder)
+  nameWithType: DiscordMessage.ModifyAsync(DiscordMessageBuilder)
+- uid: DSharpPlus.Entities.DiscordMessage.ModifyAsync(DSharpPlus.Entities.Optional{DSharpPlus.Entities.DiscordEmbed})
+  name: ModifyAsync(Optional<DiscordEmbed>)
+  href: api/DSharpPlus.Entities.DiscordMessage.html#DSharpPlus_Entities_DiscordMessage_ModifyAsync_DSharpPlus_Entities_Optional_DSharpPlus_Entities_DiscordEmbed__
+  commentId: M:DSharpPlus.Entities.DiscordMessage.ModifyAsync(DSharpPlus.Entities.Optional{DSharpPlus.Entities.DiscordEmbed})
+  name.vb: ModifyAsync(Optional(Of DiscordEmbed))
+  fullName: DSharpPlus.Entities.DiscordMessage.ModifyAsync(DSharpPlus.Entities.Optional<DSharpPlus.Entities.DiscordEmbed>)
+  fullName.vb: DSharpPlus.Entities.DiscordMessage.ModifyAsync(DSharpPlus.Entities.Optional(Of DSharpPlus.Entities.DiscordEmbed))
+  nameWithType: DiscordMessage.ModifyAsync(Optional<DiscordEmbed>)
+  nameWithType.vb: DiscordMessage.ModifyAsync(Optional(Of DiscordEmbed))
+- uid: DSharpPlus.Entities.DiscordMessage.ModifyAsync(DSharpPlus.Entities.Optional{System.String})
+  name: ModifyAsync(Optional<String>)
+  href: api/DSharpPlus.Entities.DiscordMessage.html#DSharpPlus_Entities_DiscordMessage_ModifyAsync_DSharpPlus_Entities_Optional_System_String__
+  commentId: M:DSharpPlus.Entities.DiscordMessage.ModifyAsync(DSharpPlus.Entities.Optional{System.String})
+  name.vb: ModifyAsync(Optional(Of String))
+  fullName: DSharpPlus.Entities.DiscordMessage.ModifyAsync(DSharpPlus.Entities.Optional<System.String>)
+  fullName.vb: DSharpPlus.Entities.DiscordMessage.ModifyAsync(DSharpPlus.Entities.Optional(Of System.String))
+  nameWithType: DiscordMessage.ModifyAsync(Optional<String>)
+  nameWithType.vb: DiscordMessage.ModifyAsync(Optional(Of String))
 - uid: DSharpPlus.Entities.DiscordMessage.ModifyAsync(DSharpPlus.Entities.Optional{System.String},DSharpPlus.Entities.Optional{DSharpPlus.Entities.DiscordEmbed})
   name: ModifyAsync(Optional<String>, Optional<DiscordEmbed>)
   href: api/DSharpPlus.Entities.DiscordMessage.html#DSharpPlus_Entities_DiscordMessage_ModifyAsync_DSharpPlus_Entities_Optional_System_String__DSharpPlus_Entities_Optional_DSharpPlus_Entities_DiscordEmbed__
@@ -15750,15 +15723,30 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.Entities.DiscordMessage.Reference
   nameWithType: DiscordMessage.Reference
-- uid: DSharpPlus.Entities.DiscordMessage.RespondAsync(System.String,System.Boolean,DSharpPlus.Entities.DiscordEmbed,IEnumerable{DSharpPlus.Entities.IMention})
-  name: RespondAsync(String, Boolean, DiscordEmbed, IEnumerable<IMention>)
-  href: api/DSharpPlus.Entities.DiscordMessage.html#DSharpPlus_Entities_DiscordMessage_RespondAsync_System_String_System_Boolean_DSharpPlus_Entities_DiscordEmbed_IEnumerable_DSharpPlus_Entities_IMention__
-  commentId: M:DSharpPlus.Entities.DiscordMessage.RespondAsync(System.String,System.Boolean,DSharpPlus.Entities.DiscordEmbed,IEnumerable{DSharpPlus.Entities.IMention})
-  name.vb: RespondAsync(String, Boolean, DiscordEmbed, IEnumerable(Of IMention))
-  fullName: DSharpPlus.Entities.DiscordMessage.RespondAsync(System.String, System.Boolean, DSharpPlus.Entities.DiscordEmbed, IEnumerable<DSharpPlus.Entities.IMention>)
-  fullName.vb: DSharpPlus.Entities.DiscordMessage.RespondAsync(System.String, System.Boolean, DSharpPlus.Entities.DiscordEmbed, IEnumerable(Of DSharpPlus.Entities.IMention))
-  nameWithType: DiscordMessage.RespondAsync(String, Boolean, DiscordEmbed, IEnumerable<IMention>)
-  nameWithType.vb: DiscordMessage.RespondAsync(String, Boolean, DiscordEmbed, IEnumerable(Of IMention))
+- uid: DSharpPlus.Entities.DiscordMessage.RespondAsync(DSharpPlus.Entities.DiscordEmbed)
+  name: RespondAsync(DiscordEmbed)
+  href: api/DSharpPlus.Entities.DiscordMessage.html#DSharpPlus_Entities_DiscordMessage_RespondAsync_DSharpPlus_Entities_DiscordEmbed_
+  commentId: M:DSharpPlus.Entities.DiscordMessage.RespondAsync(DSharpPlus.Entities.DiscordEmbed)
+  fullName: DSharpPlus.Entities.DiscordMessage.RespondAsync(DSharpPlus.Entities.DiscordEmbed)
+  nameWithType: DiscordMessage.RespondAsync(DiscordEmbed)
+- uid: DSharpPlus.Entities.DiscordMessage.RespondAsync(DSharpPlus.Entities.DiscordMessageBuilder)
+  name: RespondAsync(DiscordMessageBuilder)
+  href: api/DSharpPlus.Entities.DiscordMessage.html#DSharpPlus_Entities_DiscordMessage_RespondAsync_DSharpPlus_Entities_DiscordMessageBuilder_
+  commentId: M:DSharpPlus.Entities.DiscordMessage.RespondAsync(DSharpPlus.Entities.DiscordMessageBuilder)
+  fullName: DSharpPlus.Entities.DiscordMessage.RespondAsync(DSharpPlus.Entities.DiscordMessageBuilder)
+  nameWithType: DiscordMessage.RespondAsync(DiscordMessageBuilder)
+- uid: DSharpPlus.Entities.DiscordMessage.RespondAsync(System.String)
+  name: RespondAsync(String)
+  href: api/DSharpPlus.Entities.DiscordMessage.html#DSharpPlus_Entities_DiscordMessage_RespondAsync_System_String_
+  commentId: M:DSharpPlus.Entities.DiscordMessage.RespondAsync(System.String)
+  fullName: DSharpPlus.Entities.DiscordMessage.RespondAsync(System.String)
+  nameWithType: DiscordMessage.RespondAsync(String)
+- uid: DSharpPlus.Entities.DiscordMessage.RespondAsync(System.String,DSharpPlus.Entities.DiscordEmbed)
+  name: RespondAsync(String, DiscordEmbed)
+  href: api/DSharpPlus.Entities.DiscordMessage.html#DSharpPlus_Entities_DiscordMessage_RespondAsync_System_String_DSharpPlus_Entities_DiscordEmbed_
+  commentId: M:DSharpPlus.Entities.DiscordMessage.RespondAsync(System.String,DSharpPlus.Entities.DiscordEmbed)
+  fullName: DSharpPlus.Entities.DiscordMessage.RespondAsync(System.String, DSharpPlus.Entities.DiscordEmbed)
+  nameWithType: DiscordMessage.RespondAsync(String, DiscordEmbed)
 - uid: DSharpPlus.Entities.DiscordMessage.RespondAsync*
   name: RespondAsync
   href: api/DSharpPlus.Entities.DiscordMessage.html#DSharpPlus_Entities_DiscordMessage_RespondAsync_
@@ -15766,56 +15754,19 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.Entities.DiscordMessage.RespondAsync
   nameWithType: DiscordMessage.RespondAsync
-- uid: DSharpPlus.Entities.DiscordMessage.RespondWithFileAsync(FileStream,System.String,System.Boolean,DSharpPlus.Entities.DiscordEmbed,IEnumerable{DSharpPlus.Entities.IMention})
-  name: RespondWithFileAsync(FileStream, String, Boolean, DiscordEmbed, IEnumerable<IMention>)
-  href: api/DSharpPlus.Entities.DiscordMessage.html#DSharpPlus_Entities_DiscordMessage_RespondWithFileAsync_FileStream_System_String_System_Boolean_DSharpPlus_Entities_DiscordEmbed_IEnumerable_DSharpPlus_Entities_IMention__
-  commentId: M:DSharpPlus.Entities.DiscordMessage.RespondWithFileAsync(FileStream,System.String,System.Boolean,DSharpPlus.Entities.DiscordEmbed,IEnumerable{DSharpPlus.Entities.IMention})
-  name.vb: RespondWithFileAsync(FileStream, String, Boolean, DiscordEmbed, IEnumerable(Of IMention))
-  fullName: DSharpPlus.Entities.DiscordMessage.RespondWithFileAsync(FileStream, System.String, System.Boolean, DSharpPlus.Entities.DiscordEmbed, IEnumerable<DSharpPlus.Entities.IMention>)
-  fullName.vb: DSharpPlus.Entities.DiscordMessage.RespondWithFileAsync(FileStream, System.String, System.Boolean, DSharpPlus.Entities.DiscordEmbed, IEnumerable(Of DSharpPlus.Entities.IMention))
-  nameWithType: DiscordMessage.RespondWithFileAsync(FileStream, String, Boolean, DiscordEmbed, IEnumerable<IMention>)
-  nameWithType.vb: DiscordMessage.RespondWithFileAsync(FileStream, String, Boolean, DiscordEmbed, IEnumerable(Of IMention))
-- uid: DSharpPlus.Entities.DiscordMessage.RespondWithFileAsync(System.String,Stream,System.String,System.Boolean,DSharpPlus.Entities.DiscordEmbed,IEnumerable{DSharpPlus.Entities.IMention})
-  name: RespondWithFileAsync(String, Stream, String, Boolean, DiscordEmbed, IEnumerable<IMention>)
-  href: api/DSharpPlus.Entities.DiscordMessage.html#DSharpPlus_Entities_DiscordMessage_RespondWithFileAsync_System_String_Stream_System_String_System_Boolean_DSharpPlus_Entities_DiscordEmbed_IEnumerable_DSharpPlus_Entities_IMention__
-  commentId: M:DSharpPlus.Entities.DiscordMessage.RespondWithFileAsync(System.String,Stream,System.String,System.Boolean,DSharpPlus.Entities.DiscordEmbed,IEnumerable{DSharpPlus.Entities.IMention})
-  name.vb: RespondWithFileAsync(String, Stream, String, Boolean, DiscordEmbed, IEnumerable(Of IMention))
-  fullName: DSharpPlus.Entities.DiscordMessage.RespondWithFileAsync(System.String, Stream, System.String, System.Boolean, DSharpPlus.Entities.DiscordEmbed, IEnumerable<DSharpPlus.Entities.IMention>)
-  fullName.vb: DSharpPlus.Entities.DiscordMessage.RespondWithFileAsync(System.String, Stream, System.String, System.Boolean, DSharpPlus.Entities.DiscordEmbed, IEnumerable(Of DSharpPlus.Entities.IMention))
-  nameWithType: DiscordMessage.RespondWithFileAsync(String, Stream, String, Boolean, DiscordEmbed, IEnumerable<IMention>)
-  nameWithType.vb: DiscordMessage.RespondWithFileAsync(String, Stream, String, Boolean, DiscordEmbed, IEnumerable(Of IMention))
-- uid: DSharpPlus.Entities.DiscordMessage.RespondWithFileAsync(System.String,System.String,System.Boolean,DSharpPlus.Entities.DiscordEmbed,IEnumerable{DSharpPlus.Entities.IMention})
-  name: RespondWithFileAsync(String, String, Boolean, DiscordEmbed, IEnumerable<IMention>)
-  href: api/DSharpPlus.Entities.DiscordMessage.html#DSharpPlus_Entities_DiscordMessage_RespondWithFileAsync_System_String_System_String_System_Boolean_DSharpPlus_Entities_DiscordEmbed_IEnumerable_DSharpPlus_Entities_IMention__
-  commentId: M:DSharpPlus.Entities.DiscordMessage.RespondWithFileAsync(System.String,System.String,System.Boolean,DSharpPlus.Entities.DiscordEmbed,IEnumerable{DSharpPlus.Entities.IMention})
-  name.vb: RespondWithFileAsync(String, String, Boolean, DiscordEmbed, IEnumerable(Of IMention))
-  fullName: DSharpPlus.Entities.DiscordMessage.RespondWithFileAsync(System.String, System.String, System.Boolean, DSharpPlus.Entities.DiscordEmbed, IEnumerable<DSharpPlus.Entities.IMention>)
-  fullName.vb: DSharpPlus.Entities.DiscordMessage.RespondWithFileAsync(System.String, System.String, System.Boolean, DSharpPlus.Entities.DiscordEmbed, IEnumerable(Of DSharpPlus.Entities.IMention))
-  nameWithType: DiscordMessage.RespondWithFileAsync(String, String, Boolean, DiscordEmbed, IEnumerable<IMention>)
-  nameWithType.vb: DiscordMessage.RespondWithFileAsync(String, String, Boolean, DiscordEmbed, IEnumerable(Of IMention))
-- uid: DSharpPlus.Entities.DiscordMessage.RespondWithFileAsync*
-  name: RespondWithFileAsync
-  href: api/DSharpPlus.Entities.DiscordMessage.html#DSharpPlus_Entities_DiscordMessage_RespondWithFileAsync_
-  commentId: Overload:DSharpPlus.Entities.DiscordMessage.RespondWithFileAsync
+- uid: DSharpPlus.Entities.DiscordMessage.Stickers
+  name: Stickers
+  href: api/DSharpPlus.Entities.DiscordMessage.html#DSharpPlus_Entities_DiscordMessage_Stickers
+  commentId: P:DSharpPlus.Entities.DiscordMessage.Stickers
+  fullName: DSharpPlus.Entities.DiscordMessage.Stickers
+  nameWithType: DiscordMessage.Stickers
+- uid: DSharpPlus.Entities.DiscordMessage.Stickers*
+  name: Stickers
+  href: api/DSharpPlus.Entities.DiscordMessage.html#DSharpPlus_Entities_DiscordMessage_Stickers_
+  commentId: Overload:DSharpPlus.Entities.DiscordMessage.Stickers
   isSpec: "True"
-  fullName: DSharpPlus.Entities.DiscordMessage.RespondWithFileAsync
-  nameWithType: DiscordMessage.RespondWithFileAsync
-- uid: DSharpPlus.Entities.DiscordMessage.RespondWithFilesAsync(Dictionary{System.String,Stream},System.String,System.Boolean,DSharpPlus.Entities.DiscordEmbed,IEnumerable{DSharpPlus.Entities.IMention})
-  name: RespondWithFilesAsync(Dictionary<String, Stream>, String, Boolean, DiscordEmbed, IEnumerable<IMention>)
-  href: api/DSharpPlus.Entities.DiscordMessage.html#DSharpPlus_Entities_DiscordMessage_RespondWithFilesAsync_Dictionary_System_String_Stream__System_String_System_Boolean_DSharpPlus_Entities_DiscordEmbed_IEnumerable_DSharpPlus_Entities_IMention__
-  commentId: M:DSharpPlus.Entities.DiscordMessage.RespondWithFilesAsync(Dictionary{System.String,Stream},System.String,System.Boolean,DSharpPlus.Entities.DiscordEmbed,IEnumerable{DSharpPlus.Entities.IMention})
-  name.vb: RespondWithFilesAsync(Dictionary(Of String, Stream), String, Boolean, DiscordEmbed, IEnumerable(Of IMention))
-  fullName: DSharpPlus.Entities.DiscordMessage.RespondWithFilesAsync(Dictionary<System.String, Stream>, System.String, System.Boolean, DSharpPlus.Entities.DiscordEmbed, IEnumerable<DSharpPlus.Entities.IMention>)
-  fullName.vb: DSharpPlus.Entities.DiscordMessage.RespondWithFilesAsync(Dictionary(Of System.String, Stream), System.String, System.Boolean, DSharpPlus.Entities.DiscordEmbed, IEnumerable(Of DSharpPlus.Entities.IMention))
-  nameWithType: DiscordMessage.RespondWithFilesAsync(Dictionary<String, Stream>, String, Boolean, DiscordEmbed, IEnumerable<IMention>)
-  nameWithType.vb: DiscordMessage.RespondWithFilesAsync(Dictionary(Of String, Stream), String, Boolean, DiscordEmbed, IEnumerable(Of IMention))
-- uid: DSharpPlus.Entities.DiscordMessage.RespondWithFilesAsync*
-  name: RespondWithFilesAsync
-  href: api/DSharpPlus.Entities.DiscordMessage.html#DSharpPlus_Entities_DiscordMessage_RespondWithFilesAsync_
-  commentId: Overload:DSharpPlus.Entities.DiscordMessage.RespondWithFilesAsync
-  isSpec: "True"
-  fullName: DSharpPlus.Entities.DiscordMessage.RespondWithFilesAsync
-  nameWithType: DiscordMessage.RespondWithFilesAsync
+  fullName: DSharpPlus.Entities.DiscordMessage.Stickers
+  nameWithType: DiscordMessage.Stickers
 - uid: DSharpPlus.Entities.DiscordMessage.Timestamp
   name: Timestamp
   href: api/DSharpPlus.Entities.DiscordMessage.html#DSharpPlus_Entities_DiscordMessage_Timestamp
@@ -15971,6 +15922,212 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.Entities.DiscordMessageApplication.Name
   nameWithType: DiscordMessageApplication.Name
+- uid: DSharpPlus.Entities.DiscordMessageBuilder
+  name: DiscordMessageBuilder
+  href: api/DSharpPlus.Entities.DiscordMessageBuilder.html
+  commentId: T:DSharpPlus.Entities.DiscordMessageBuilder
+  fullName: DSharpPlus.Entities.DiscordMessageBuilder
+  nameWithType: DiscordMessageBuilder
+- uid: DSharpPlus.Entities.DiscordMessageBuilder.Content
+  name: Content
+  href: api/DSharpPlus.Entities.DiscordMessageBuilder.html#DSharpPlus_Entities_DiscordMessageBuilder_Content
+  commentId: P:DSharpPlus.Entities.DiscordMessageBuilder.Content
+  fullName: DSharpPlus.Entities.DiscordMessageBuilder.Content
+  nameWithType: DiscordMessageBuilder.Content
+- uid: DSharpPlus.Entities.DiscordMessageBuilder.Content*
+  name: Content
+  href: api/DSharpPlus.Entities.DiscordMessageBuilder.html#DSharpPlus_Entities_DiscordMessageBuilder_Content_
+  commentId: Overload:DSharpPlus.Entities.DiscordMessageBuilder.Content
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordMessageBuilder.Content
+  nameWithType: DiscordMessageBuilder.Content
+- uid: DSharpPlus.Entities.DiscordMessageBuilder.Embed
+  name: Embed
+  href: api/DSharpPlus.Entities.DiscordMessageBuilder.html#DSharpPlus_Entities_DiscordMessageBuilder_Embed
+  commentId: P:DSharpPlus.Entities.DiscordMessageBuilder.Embed
+  fullName: DSharpPlus.Entities.DiscordMessageBuilder.Embed
+  nameWithType: DiscordMessageBuilder.Embed
+- uid: DSharpPlus.Entities.DiscordMessageBuilder.Embed*
+  name: Embed
+  href: api/DSharpPlus.Entities.DiscordMessageBuilder.html#DSharpPlus_Entities_DiscordMessageBuilder_Embed_
+  commentId: Overload:DSharpPlus.Entities.DiscordMessageBuilder.Embed
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordMessageBuilder.Embed
+  nameWithType: DiscordMessageBuilder.Embed
+- uid: DSharpPlus.Entities.DiscordMessageBuilder.Files
+  name: Files
+  href: api/DSharpPlus.Entities.DiscordMessageBuilder.html#DSharpPlus_Entities_DiscordMessageBuilder_Files
+  commentId: P:DSharpPlus.Entities.DiscordMessageBuilder.Files
+  fullName: DSharpPlus.Entities.DiscordMessageBuilder.Files
+  nameWithType: DiscordMessageBuilder.Files
+- uid: DSharpPlus.Entities.DiscordMessageBuilder.Files*
+  name: Files
+  href: api/DSharpPlus.Entities.DiscordMessageBuilder.html#DSharpPlus_Entities_DiscordMessageBuilder_Files_
+  commentId: Overload:DSharpPlus.Entities.DiscordMessageBuilder.Files
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordMessageBuilder.Files
+  nameWithType: DiscordMessageBuilder.Files
+- uid: DSharpPlus.Entities.DiscordMessageBuilder.HasTTS(System.Boolean)
+  name: HasTTS(Boolean)
+  href: api/DSharpPlus.Entities.DiscordMessageBuilder.html#DSharpPlus_Entities_DiscordMessageBuilder_HasTTS_System_Boolean_
+  commentId: M:DSharpPlus.Entities.DiscordMessageBuilder.HasTTS(System.Boolean)
+  fullName: DSharpPlus.Entities.DiscordMessageBuilder.HasTTS(System.Boolean)
+  nameWithType: DiscordMessageBuilder.HasTTS(Boolean)
+- uid: DSharpPlus.Entities.DiscordMessageBuilder.HasTTS*
+  name: HasTTS
+  href: api/DSharpPlus.Entities.DiscordMessageBuilder.html#DSharpPlus_Entities_DiscordMessageBuilder_HasTTS_
+  commentId: Overload:DSharpPlus.Entities.DiscordMessageBuilder.HasTTS
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordMessageBuilder.HasTTS
+  nameWithType: DiscordMessageBuilder.HasTTS
+- uid: DSharpPlus.Entities.DiscordMessageBuilder.IsTTS
+  name: IsTTS
+  href: api/DSharpPlus.Entities.DiscordMessageBuilder.html#DSharpPlus_Entities_DiscordMessageBuilder_IsTTS
+  commentId: P:DSharpPlus.Entities.DiscordMessageBuilder.IsTTS
+  fullName: DSharpPlus.Entities.DiscordMessageBuilder.IsTTS
+  nameWithType: DiscordMessageBuilder.IsTTS
+- uid: DSharpPlus.Entities.DiscordMessageBuilder.IsTTS*
+  name: IsTTS
+  href: api/DSharpPlus.Entities.DiscordMessageBuilder.html#DSharpPlus_Entities_DiscordMessageBuilder_IsTTS_
+  commentId: Overload:DSharpPlus.Entities.DiscordMessageBuilder.IsTTS
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordMessageBuilder.IsTTS
+  nameWithType: DiscordMessageBuilder.IsTTS
+- uid: DSharpPlus.Entities.DiscordMessageBuilder.Mentions
+  name: Mentions
+  href: api/DSharpPlus.Entities.DiscordMessageBuilder.html#DSharpPlus_Entities_DiscordMessageBuilder_Mentions
+  commentId: P:DSharpPlus.Entities.DiscordMessageBuilder.Mentions
+  fullName: DSharpPlus.Entities.DiscordMessageBuilder.Mentions
+  nameWithType: DiscordMessageBuilder.Mentions
+- uid: DSharpPlus.Entities.DiscordMessageBuilder.Mentions*
+  name: Mentions
+  href: api/DSharpPlus.Entities.DiscordMessageBuilder.html#DSharpPlus_Entities_DiscordMessageBuilder_Mentions_
+  commentId: Overload:DSharpPlus.Entities.DiscordMessageBuilder.Mentions
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordMessageBuilder.Mentions
+  nameWithType: DiscordMessageBuilder.Mentions
+- uid: DSharpPlus.Entities.DiscordMessageBuilder.ModifyAsync(DSharpPlus.Entities.DiscordMessage)
+  name: ModifyAsync(DiscordMessage)
+  href: api/DSharpPlus.Entities.DiscordMessageBuilder.html#DSharpPlus_Entities_DiscordMessageBuilder_ModifyAsync_DSharpPlus_Entities_DiscordMessage_
+  commentId: M:DSharpPlus.Entities.DiscordMessageBuilder.ModifyAsync(DSharpPlus.Entities.DiscordMessage)
+  fullName: DSharpPlus.Entities.DiscordMessageBuilder.ModifyAsync(DSharpPlus.Entities.DiscordMessage)
+  nameWithType: DiscordMessageBuilder.ModifyAsync(DiscordMessage)
+- uid: DSharpPlus.Entities.DiscordMessageBuilder.ModifyAsync*
+  name: ModifyAsync
+  href: api/DSharpPlus.Entities.DiscordMessageBuilder.html#DSharpPlus_Entities_DiscordMessageBuilder_ModifyAsync_
+  commentId: Overload:DSharpPlus.Entities.DiscordMessageBuilder.ModifyAsync
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordMessageBuilder.ModifyAsync
+  nameWithType: DiscordMessageBuilder.ModifyAsync
+- uid: DSharpPlus.Entities.DiscordMessageBuilder.SendAsync(DSharpPlus.Entities.DiscordChannel)
+  name: SendAsync(DiscordChannel)
+  href: api/DSharpPlus.Entities.DiscordMessageBuilder.html#DSharpPlus_Entities_DiscordMessageBuilder_SendAsync_DSharpPlus_Entities_DiscordChannel_
+  commentId: M:DSharpPlus.Entities.DiscordMessageBuilder.SendAsync(DSharpPlus.Entities.DiscordChannel)
+  fullName: DSharpPlus.Entities.DiscordMessageBuilder.SendAsync(DSharpPlus.Entities.DiscordChannel)
+  nameWithType: DiscordMessageBuilder.SendAsync(DiscordChannel)
+- uid: DSharpPlus.Entities.DiscordMessageBuilder.SendAsync*
+  name: SendAsync
+  href: api/DSharpPlus.Entities.DiscordMessageBuilder.html#DSharpPlus_Entities_DiscordMessageBuilder_SendAsync_
+  commentId: Overload:DSharpPlus.Entities.DiscordMessageBuilder.SendAsync
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordMessageBuilder.SendAsync
+  nameWithType: DiscordMessageBuilder.SendAsync
+- uid: DSharpPlus.Entities.DiscordMessageBuilder.WithAllowedMention(DSharpPlus.Entities.IMention)
+  name: WithAllowedMention(IMention)
+  href: api/DSharpPlus.Entities.DiscordMessageBuilder.html#DSharpPlus_Entities_DiscordMessageBuilder_WithAllowedMention_DSharpPlus_Entities_IMention_
+  commentId: M:DSharpPlus.Entities.DiscordMessageBuilder.WithAllowedMention(DSharpPlus.Entities.IMention)
+  fullName: DSharpPlus.Entities.DiscordMessageBuilder.WithAllowedMention(DSharpPlus.Entities.IMention)
+  nameWithType: DiscordMessageBuilder.WithAllowedMention(IMention)
+- uid: DSharpPlus.Entities.DiscordMessageBuilder.WithAllowedMention*
+  name: WithAllowedMention
+  href: api/DSharpPlus.Entities.DiscordMessageBuilder.html#DSharpPlus_Entities_DiscordMessageBuilder_WithAllowedMention_
+  commentId: Overload:DSharpPlus.Entities.DiscordMessageBuilder.WithAllowedMention
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordMessageBuilder.WithAllowedMention
+  nameWithType: DiscordMessageBuilder.WithAllowedMention
+- uid: DSharpPlus.Entities.DiscordMessageBuilder.WithAllowedMentions(IEnumerable{DSharpPlus.Entities.IMention})
+  name: WithAllowedMentions(IEnumerable<IMention>)
+  href: api/DSharpPlus.Entities.DiscordMessageBuilder.html#DSharpPlus_Entities_DiscordMessageBuilder_WithAllowedMentions_IEnumerable_DSharpPlus_Entities_IMention__
+  commentId: M:DSharpPlus.Entities.DiscordMessageBuilder.WithAllowedMentions(IEnumerable{DSharpPlus.Entities.IMention})
+  name.vb: WithAllowedMentions(IEnumerable(Of IMention))
+  fullName: DSharpPlus.Entities.DiscordMessageBuilder.WithAllowedMentions(IEnumerable<DSharpPlus.Entities.IMention>)
+  fullName.vb: DSharpPlus.Entities.DiscordMessageBuilder.WithAllowedMentions(IEnumerable(Of DSharpPlus.Entities.IMention))
+  nameWithType: DiscordMessageBuilder.WithAllowedMentions(IEnumerable<IMention>)
+  nameWithType.vb: DiscordMessageBuilder.WithAllowedMentions(IEnumerable(Of IMention))
+- uid: DSharpPlus.Entities.DiscordMessageBuilder.WithAllowedMentions*
+  name: WithAllowedMentions
+  href: api/DSharpPlus.Entities.DiscordMessageBuilder.html#DSharpPlus_Entities_DiscordMessageBuilder_WithAllowedMentions_
+  commentId: Overload:DSharpPlus.Entities.DiscordMessageBuilder.WithAllowedMentions
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordMessageBuilder.WithAllowedMentions
+  nameWithType: DiscordMessageBuilder.WithAllowedMentions
+- uid: DSharpPlus.Entities.DiscordMessageBuilder.WithContent(System.String)
+  name: WithContent(String)
+  href: api/DSharpPlus.Entities.DiscordMessageBuilder.html#DSharpPlus_Entities_DiscordMessageBuilder_WithContent_System_String_
+  commentId: M:DSharpPlus.Entities.DiscordMessageBuilder.WithContent(System.String)
+  fullName: DSharpPlus.Entities.DiscordMessageBuilder.WithContent(System.String)
+  nameWithType: DiscordMessageBuilder.WithContent(String)
+- uid: DSharpPlus.Entities.DiscordMessageBuilder.WithContent*
+  name: WithContent
+  href: api/DSharpPlus.Entities.DiscordMessageBuilder.html#DSharpPlus_Entities_DiscordMessageBuilder_WithContent_
+  commentId: Overload:DSharpPlus.Entities.DiscordMessageBuilder.WithContent
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordMessageBuilder.WithContent
+  nameWithType: DiscordMessageBuilder.WithContent
+- uid: DSharpPlus.Entities.DiscordMessageBuilder.WithEmbed(DSharpPlus.Entities.DiscordEmbed)
+  name: WithEmbed(DiscordEmbed)
+  href: api/DSharpPlus.Entities.DiscordMessageBuilder.html#DSharpPlus_Entities_DiscordMessageBuilder_WithEmbed_DSharpPlus_Entities_DiscordEmbed_
+  commentId: M:DSharpPlus.Entities.DiscordMessageBuilder.WithEmbed(DSharpPlus.Entities.DiscordEmbed)
+  fullName: DSharpPlus.Entities.DiscordMessageBuilder.WithEmbed(DSharpPlus.Entities.DiscordEmbed)
+  nameWithType: DiscordMessageBuilder.WithEmbed(DiscordEmbed)
+- uid: DSharpPlus.Entities.DiscordMessageBuilder.WithEmbed*
+  name: WithEmbed
+  href: api/DSharpPlus.Entities.DiscordMessageBuilder.html#DSharpPlus_Entities_DiscordMessageBuilder_WithEmbed_
+  commentId: Overload:DSharpPlus.Entities.DiscordMessageBuilder.WithEmbed
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordMessageBuilder.WithEmbed
+  nameWithType: DiscordMessageBuilder.WithEmbed
+- uid: DSharpPlus.Entities.DiscordMessageBuilder.WithFile(FileStream)
+  name: WithFile(FileStream)
+  href: api/DSharpPlus.Entities.DiscordMessageBuilder.html#DSharpPlus_Entities_DiscordMessageBuilder_WithFile_FileStream_
+  commentId: M:DSharpPlus.Entities.DiscordMessageBuilder.WithFile(FileStream)
+  fullName: DSharpPlus.Entities.DiscordMessageBuilder.WithFile(FileStream)
+  nameWithType: DiscordMessageBuilder.WithFile(FileStream)
+- uid: DSharpPlus.Entities.DiscordMessageBuilder.WithFile(System.String)
+  name: WithFile(String)
+  href: api/DSharpPlus.Entities.DiscordMessageBuilder.html#DSharpPlus_Entities_DiscordMessageBuilder_WithFile_System_String_
+  commentId: M:DSharpPlus.Entities.DiscordMessageBuilder.WithFile(System.String)
+  fullName: DSharpPlus.Entities.DiscordMessageBuilder.WithFile(System.String)
+  nameWithType: DiscordMessageBuilder.WithFile(String)
+- uid: DSharpPlus.Entities.DiscordMessageBuilder.WithFile(System.String,Stream)
+  name: WithFile(String, Stream)
+  href: api/DSharpPlus.Entities.DiscordMessageBuilder.html#DSharpPlus_Entities_DiscordMessageBuilder_WithFile_System_String_Stream_
+  commentId: M:DSharpPlus.Entities.DiscordMessageBuilder.WithFile(System.String,Stream)
+  fullName: DSharpPlus.Entities.DiscordMessageBuilder.WithFile(System.String, Stream)
+  nameWithType: DiscordMessageBuilder.WithFile(String, Stream)
+- uid: DSharpPlus.Entities.DiscordMessageBuilder.WithFile*
+  name: WithFile
+  href: api/DSharpPlus.Entities.DiscordMessageBuilder.html#DSharpPlus_Entities_DiscordMessageBuilder_WithFile_
+  commentId: Overload:DSharpPlus.Entities.DiscordMessageBuilder.WithFile
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordMessageBuilder.WithFile
+  nameWithType: DiscordMessageBuilder.WithFile
+- uid: DSharpPlus.Entities.DiscordMessageBuilder.WithFiles(Dictionary{System.String,Stream})
+  name: WithFiles(Dictionary<String, Stream>)
+  href: api/DSharpPlus.Entities.DiscordMessageBuilder.html#DSharpPlus_Entities_DiscordMessageBuilder_WithFiles_Dictionary_System_String_Stream__
+  commentId: M:DSharpPlus.Entities.DiscordMessageBuilder.WithFiles(Dictionary{System.String,Stream})
+  name.vb: WithFiles(Dictionary(Of String, Stream))
+  fullName: DSharpPlus.Entities.DiscordMessageBuilder.WithFiles(Dictionary<System.String, Stream>)
+  fullName.vb: DSharpPlus.Entities.DiscordMessageBuilder.WithFiles(Dictionary(Of System.String, Stream))
+  nameWithType: DiscordMessageBuilder.WithFiles(Dictionary<String, Stream>)
+  nameWithType.vb: DiscordMessageBuilder.WithFiles(Dictionary(Of String, Stream))
+- uid: DSharpPlus.Entities.DiscordMessageBuilder.WithFiles*
+  name: WithFiles
+  href: api/DSharpPlus.Entities.DiscordMessageBuilder.html#DSharpPlus_Entities_DiscordMessageBuilder_WithFiles_
+  commentId: Overload:DSharpPlus.Entities.DiscordMessageBuilder.WithFiles
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordMessageBuilder.WithFiles
+  nameWithType: DiscordMessageBuilder.WithFiles
 - uid: DSharpPlus.Entities.DiscordMessageReference
   name: DiscordMessageReference
   href: api/DSharpPlus.Entities.DiscordMessageReference.html
@@ -16029,6 +16186,116 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.Entities.DiscordMessageReference.ToString
   nameWithType: DiscordMessageReference.ToString
+- uid: DSharpPlus.Entities.DiscordMessageSticker
+  name: DiscordMessageSticker
+  href: api/DSharpPlus.Entities.DiscordMessageSticker.html
+  commentId: T:DSharpPlus.Entities.DiscordMessageSticker
+  fullName: DSharpPlus.Entities.DiscordMessageSticker
+  nameWithType: DiscordMessageSticker
+- uid: DSharpPlus.Entities.DiscordMessageSticker.Asset
+  name: Asset
+  href: api/DSharpPlus.Entities.DiscordMessageSticker.html#DSharpPlus_Entities_DiscordMessageSticker_Asset
+  commentId: P:DSharpPlus.Entities.DiscordMessageSticker.Asset
+  fullName: DSharpPlus.Entities.DiscordMessageSticker.Asset
+  nameWithType: DiscordMessageSticker.Asset
+- uid: DSharpPlus.Entities.DiscordMessageSticker.Asset*
+  name: Asset
+  href: api/DSharpPlus.Entities.DiscordMessageSticker.html#DSharpPlus_Entities_DiscordMessageSticker_Asset_
+  commentId: Overload:DSharpPlus.Entities.DiscordMessageSticker.Asset
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordMessageSticker.Asset
+  nameWithType: DiscordMessageSticker.Asset
+- uid: DSharpPlus.Entities.DiscordMessageSticker.Description
+  name: Description
+  href: api/DSharpPlus.Entities.DiscordMessageSticker.html#DSharpPlus_Entities_DiscordMessageSticker_Description
+  commentId: P:DSharpPlus.Entities.DiscordMessageSticker.Description
+  fullName: DSharpPlus.Entities.DiscordMessageSticker.Description
+  nameWithType: DiscordMessageSticker.Description
+- uid: DSharpPlus.Entities.DiscordMessageSticker.Description*
+  name: Description
+  href: api/DSharpPlus.Entities.DiscordMessageSticker.html#DSharpPlus_Entities_DiscordMessageSticker_Description_
+  commentId: Overload:DSharpPlus.Entities.DiscordMessageSticker.Description
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordMessageSticker.Description
+  nameWithType: DiscordMessageSticker.Description
+- uid: DSharpPlus.Entities.DiscordMessageSticker.Equals(DSharpPlus.Entities.DiscordMessageSticker)
+  name: Equals(DiscordMessageSticker)
+  href: api/DSharpPlus.Entities.DiscordMessageSticker.html#DSharpPlus_Entities_DiscordMessageSticker_Equals_DSharpPlus_Entities_DiscordMessageSticker_
+  commentId: M:DSharpPlus.Entities.DiscordMessageSticker.Equals(DSharpPlus.Entities.DiscordMessageSticker)
+  fullName: DSharpPlus.Entities.DiscordMessageSticker.Equals(DSharpPlus.Entities.DiscordMessageSticker)
+  nameWithType: DiscordMessageSticker.Equals(DiscordMessageSticker)
+- uid: DSharpPlus.Entities.DiscordMessageSticker.Equals*
+  name: Equals
+  href: api/DSharpPlus.Entities.DiscordMessageSticker.html#DSharpPlus_Entities_DiscordMessageSticker_Equals_
+  commentId: Overload:DSharpPlus.Entities.DiscordMessageSticker.Equals
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordMessageSticker.Equals
+  nameWithType: DiscordMessageSticker.Equals
+- uid: DSharpPlus.Entities.DiscordMessageSticker.FormatType
+  name: FormatType
+  href: api/DSharpPlus.Entities.DiscordMessageSticker.html#DSharpPlus_Entities_DiscordMessageSticker_FormatType
+  commentId: P:DSharpPlus.Entities.DiscordMessageSticker.FormatType
+  fullName: DSharpPlus.Entities.DiscordMessageSticker.FormatType
+  nameWithType: DiscordMessageSticker.FormatType
+- uid: DSharpPlus.Entities.DiscordMessageSticker.FormatType*
+  name: FormatType
+  href: api/DSharpPlus.Entities.DiscordMessageSticker.html#DSharpPlus_Entities_DiscordMessageSticker_FormatType_
+  commentId: Overload:DSharpPlus.Entities.DiscordMessageSticker.FormatType
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordMessageSticker.FormatType
+  nameWithType: DiscordMessageSticker.FormatType
+- uid: DSharpPlus.Entities.DiscordMessageSticker.Name
+  name: Name
+  href: api/DSharpPlus.Entities.DiscordMessageSticker.html#DSharpPlus_Entities_DiscordMessageSticker_Name
+  commentId: P:DSharpPlus.Entities.DiscordMessageSticker.Name
+  fullName: DSharpPlus.Entities.DiscordMessageSticker.Name
+  nameWithType: DiscordMessageSticker.Name
+- uid: DSharpPlus.Entities.DiscordMessageSticker.Name*
+  name: Name
+  href: api/DSharpPlus.Entities.DiscordMessageSticker.html#DSharpPlus_Entities_DiscordMessageSticker_Name_
+  commentId: Overload:DSharpPlus.Entities.DiscordMessageSticker.Name
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordMessageSticker.Name
+  nameWithType: DiscordMessageSticker.Name
+- uid: DSharpPlus.Entities.DiscordMessageSticker.PackId
+  name: PackId
+  href: api/DSharpPlus.Entities.DiscordMessageSticker.html#DSharpPlus_Entities_DiscordMessageSticker_PackId
+  commentId: P:DSharpPlus.Entities.DiscordMessageSticker.PackId
+  fullName: DSharpPlus.Entities.DiscordMessageSticker.PackId
+  nameWithType: DiscordMessageSticker.PackId
+- uid: DSharpPlus.Entities.DiscordMessageSticker.PackId*
+  name: PackId
+  href: api/DSharpPlus.Entities.DiscordMessageSticker.html#DSharpPlus_Entities_DiscordMessageSticker_PackId_
+  commentId: Overload:DSharpPlus.Entities.DiscordMessageSticker.PackId
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordMessageSticker.PackId
+  nameWithType: DiscordMessageSticker.PackId
+- uid: DSharpPlus.Entities.DiscordMessageSticker.PreviewAsset
+  name: PreviewAsset
+  href: api/DSharpPlus.Entities.DiscordMessageSticker.html#DSharpPlus_Entities_DiscordMessageSticker_PreviewAsset
+  commentId: P:DSharpPlus.Entities.DiscordMessageSticker.PreviewAsset
+  fullName: DSharpPlus.Entities.DiscordMessageSticker.PreviewAsset
+  nameWithType: DiscordMessageSticker.PreviewAsset
+- uid: DSharpPlus.Entities.DiscordMessageSticker.PreviewAsset*
+  name: PreviewAsset
+  href: api/DSharpPlus.Entities.DiscordMessageSticker.html#DSharpPlus_Entities_DiscordMessageSticker_PreviewAsset_
+  commentId: Overload:DSharpPlus.Entities.DiscordMessageSticker.PreviewAsset
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordMessageSticker.PreviewAsset
+  nameWithType: DiscordMessageSticker.PreviewAsset
+- uid: DSharpPlus.Entities.DiscordMessageSticker.Tags
+  name: Tags
+  href: api/DSharpPlus.Entities.DiscordMessageSticker.html#DSharpPlus_Entities_DiscordMessageSticker_Tags
+  commentId: P:DSharpPlus.Entities.DiscordMessageSticker.Tags
+  fullName: DSharpPlus.Entities.DiscordMessageSticker.Tags
+  nameWithType: DiscordMessageSticker.Tags
+- uid: DSharpPlus.Entities.DiscordMessageSticker.Tags*
+  name: Tags
+  href: api/DSharpPlus.Entities.DiscordMessageSticker.html#DSharpPlus_Entities_DiscordMessageSticker_Tags_
+  commentId: Overload:DSharpPlus.Entities.DiscordMessageSticker.Tags
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordMessageSticker.Tags
+  nameWithType: DiscordMessageSticker.Tags
 - uid: DSharpPlus.Entities.DiscordOverwrite
   name: DiscordOverwrite
   href: api/DSharpPlus.Entities.DiscordOverwrite.html
@@ -17730,6 +17997,32 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.Entities.DiscordVoiceState.IsSelfMuted
   nameWithType: DiscordVoiceState.IsSelfMuted
+- uid: DSharpPlus.Entities.DiscordVoiceState.IsSelfStream
+  name: IsSelfStream
+  href: api/DSharpPlus.Entities.DiscordVoiceState.html#DSharpPlus_Entities_DiscordVoiceState_IsSelfStream
+  commentId: P:DSharpPlus.Entities.DiscordVoiceState.IsSelfStream
+  fullName: DSharpPlus.Entities.DiscordVoiceState.IsSelfStream
+  nameWithType: DiscordVoiceState.IsSelfStream
+- uid: DSharpPlus.Entities.DiscordVoiceState.IsSelfStream*
+  name: IsSelfStream
+  href: api/DSharpPlus.Entities.DiscordVoiceState.html#DSharpPlus_Entities_DiscordVoiceState_IsSelfStream_
+  commentId: Overload:DSharpPlus.Entities.DiscordVoiceState.IsSelfStream
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordVoiceState.IsSelfStream
+  nameWithType: DiscordVoiceState.IsSelfStream
+- uid: DSharpPlus.Entities.DiscordVoiceState.IsSelfVideo
+  name: IsSelfVideo
+  href: api/DSharpPlus.Entities.DiscordVoiceState.html#DSharpPlus_Entities_DiscordVoiceState_IsSelfVideo
+  commentId: P:DSharpPlus.Entities.DiscordVoiceState.IsSelfVideo
+  fullName: DSharpPlus.Entities.DiscordVoiceState.IsSelfVideo
+  nameWithType: DiscordVoiceState.IsSelfVideo
+- uid: DSharpPlus.Entities.DiscordVoiceState.IsSelfVideo*
+  name: IsSelfVideo
+  href: api/DSharpPlus.Entities.DiscordVoiceState.html#DSharpPlus_Entities_DiscordVoiceState_IsSelfVideo_
+  commentId: Overload:DSharpPlus.Entities.DiscordVoiceState.IsSelfVideo
+  isSpec: "True"
+  fullName: DSharpPlus.Entities.DiscordVoiceState.IsSelfVideo
+  nameWithType: DiscordVoiceState.IsSelfVideo
 - uid: DSharpPlus.Entities.DiscordVoiceState.IsServerDeafened
   name: IsServerDeafened
   href: api/DSharpPlus.Entities.DiscordVoiceState.html#DSharpPlus_Entities_DiscordVoiceState_IsServerDeafened
@@ -17924,15 +18217,15 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.Entities.DiscordWebhook.GuildId
   nameWithType: DiscordWebhook.GuildId
-- uid: DSharpPlus.Entities.DiscordWebhook.ModifyAsync(System.String,DSharpPlus.Entities.Optional{Stream},System.Nullable{System.UInt64})
-  name: ModifyAsync(String, Optional<Stream>, Nullable<UInt64>)
-  href: api/DSharpPlus.Entities.DiscordWebhook.html#DSharpPlus_Entities_DiscordWebhook_ModifyAsync_System_String_DSharpPlus_Entities_Optional_Stream__System_Nullable_System_UInt64__
-  commentId: M:DSharpPlus.Entities.DiscordWebhook.ModifyAsync(System.String,DSharpPlus.Entities.Optional{Stream},System.Nullable{System.UInt64})
-  name.vb: ModifyAsync(String, Optional(Of Stream), Nullable(Of UInt64))
-  fullName: DSharpPlus.Entities.DiscordWebhook.ModifyAsync(System.String, DSharpPlus.Entities.Optional<Stream>, System.Nullable<System.UInt64>)
-  fullName.vb: DSharpPlus.Entities.DiscordWebhook.ModifyAsync(System.String, DSharpPlus.Entities.Optional(Of Stream), System.Nullable(Of System.UInt64))
-  nameWithType: DiscordWebhook.ModifyAsync(String, Optional<Stream>, Nullable<UInt64>)
-  nameWithType.vb: DiscordWebhook.ModifyAsync(String, Optional(Of Stream), Nullable(Of UInt64))
+- uid: DSharpPlus.Entities.DiscordWebhook.ModifyAsync(System.String,DSharpPlus.Entities.Optional{Stream},System.Nullable{System.UInt64},System.String)
+  name: ModifyAsync(String, Optional<Stream>, Nullable<UInt64>, String)
+  href: api/DSharpPlus.Entities.DiscordWebhook.html#DSharpPlus_Entities_DiscordWebhook_ModifyAsync_System_String_DSharpPlus_Entities_Optional_Stream__System_Nullable_System_UInt64__System_String_
+  commentId: M:DSharpPlus.Entities.DiscordWebhook.ModifyAsync(System.String,DSharpPlus.Entities.Optional{Stream},System.Nullable{System.UInt64},System.String)
+  name.vb: ModifyAsync(String, Optional(Of Stream), Nullable(Of UInt64), String)
+  fullName: DSharpPlus.Entities.DiscordWebhook.ModifyAsync(System.String, DSharpPlus.Entities.Optional<Stream>, System.Nullable<System.UInt64>, System.String)
+  fullName.vb: DSharpPlus.Entities.DiscordWebhook.ModifyAsync(System.String, DSharpPlus.Entities.Optional(Of Stream), System.Nullable(Of System.UInt64), System.String)
+  nameWithType: DiscordWebhook.ModifyAsync(String, Optional<Stream>, Nullable<UInt64>, String)
+  nameWithType.vb: DiscordWebhook.ModifyAsync(String, Optional(Of Stream), Nullable(Of UInt64), String)
 - uid: DSharpPlus.Entities.DiscordWebhook.ModifyAsync*
   name: ModifyAsync
   href: api/DSharpPlus.Entities.DiscordWebhook.html#DSharpPlus_Entities_DiscordWebhook_ModifyAsync_
@@ -18973,6 +19266,30 @@ references:
   isSpec: "True"
   fullName: DSharpPlus.Entities.SnowflakeObject.Id
   nameWithType: SnowflakeObject.Id
+- uid: DSharpPlus.Entities.StickerFormat
+  name: StickerFormat
+  href: api/DSharpPlus.Entities.StickerFormat.html
+  commentId: T:DSharpPlus.Entities.StickerFormat
+  fullName: DSharpPlus.Entities.StickerFormat
+  nameWithType: StickerFormat
+- uid: DSharpPlus.Entities.StickerFormat.APNG
+  name: APNG
+  href: api/DSharpPlus.Entities.StickerFormat.html#DSharpPlus_Entities_StickerFormat_APNG
+  commentId: F:DSharpPlus.Entities.StickerFormat.APNG
+  fullName: DSharpPlus.Entities.StickerFormat.APNG
+  nameWithType: StickerFormat.APNG
+- uid: DSharpPlus.Entities.StickerFormat.LOTTIE
+  name: LOTTIE
+  href: api/DSharpPlus.Entities.StickerFormat.html#DSharpPlus_Entities_StickerFormat_LOTTIE
+  commentId: F:DSharpPlus.Entities.StickerFormat.LOTTIE
+  fullName: DSharpPlus.Entities.StickerFormat.LOTTIE
+  nameWithType: StickerFormat.LOTTIE
+- uid: DSharpPlus.Entities.StickerFormat.PNG
+  name: PNG
+  href: api/DSharpPlus.Entities.StickerFormat.html#DSharpPlus_Entities_StickerFormat_PNG
+  commentId: F:DSharpPlus.Entities.StickerFormat.PNG
+  fullName: DSharpPlus.Entities.StickerFormat.PNG
+  nameWithType: StickerFormat.PNG
 - uid: DSharpPlus.Entities.UserMention
   name: UserMention
   href: api/DSharpPlus.Entities.UserMention.html
@@ -20919,12 +21236,12 @@ references:
   commentId: T:DSharpPlus.EventArgs.SocketTextMessageEventArgs
   fullName: DSharpPlus.EventArgs.SocketTextMessageEventArgs
   nameWithType: SocketTextMessageEventArgs
-- uid: DSharpPlus.EventArgs.SocketTextMessageEventArgs.#ctor(System.String)
-  name: SocketTextMessageEventArgs(String)
-  href: api/DSharpPlus.EventArgs.SocketTextMessageEventArgs.html#DSharpPlus_EventArgs_SocketTextMessageEventArgs__ctor_System_String_
-  commentId: M:DSharpPlus.EventArgs.SocketTextMessageEventArgs.#ctor(System.String)
-  fullName: DSharpPlus.EventArgs.SocketTextMessageEventArgs.SocketTextMessageEventArgs(System.String)
-  nameWithType: SocketTextMessageEventArgs.SocketTextMessageEventArgs(String)
+- uid: DSharpPlus.EventArgs.SocketTextMessageEventArgs.#ctor(MemoryStream)
+  name: SocketTextMessageEventArgs(MemoryStream)
+  href: api/DSharpPlus.EventArgs.SocketTextMessageEventArgs.html#DSharpPlus_EventArgs_SocketTextMessageEventArgs__ctor_MemoryStream_
+  commentId: M:DSharpPlus.EventArgs.SocketTextMessageEventArgs.#ctor(MemoryStream)
+  fullName: DSharpPlus.EventArgs.SocketTextMessageEventArgs.SocketTextMessageEventArgs(MemoryStream)
+  nameWithType: SocketTextMessageEventArgs.SocketTextMessageEventArgs(MemoryStream)
 - uid: DSharpPlus.EventArgs.SocketTextMessageEventArgs.#ctor*
   name: SocketTextMessageEventArgs
   href: api/DSharpPlus.EventArgs.SocketTextMessageEventArgs.html#DSharpPlus_EventArgs_SocketTextMessageEventArgs__ctor_

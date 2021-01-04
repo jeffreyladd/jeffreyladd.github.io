@@ -655,13 +655,13 @@
   
   
   <a id="DSharpPlus_Entities_DiscordWebhook_ModifyAsync_" data-uid="DSharpPlus.Entities.DiscordWebhook.ModifyAsync*"></a>
-  <h4 id="DSharpPlus_Entities_DiscordWebhook_ModifyAsync_System_String_DSharpPlus_Entities_Optional_Stream__System_Nullable_System_UInt64__" data-uid="DSharpPlus.Entities.DiscordWebhook.ModifyAsync(System.String,DSharpPlus.Entities.Optional{Stream},System.Nullable{System.UInt64})">ModifyAsync(String, Optional&lt;Stream&gt;, Nullable&lt;UInt64&gt;)</h4>
+  <h4 id="DSharpPlus_Entities_DiscordWebhook_ModifyAsync_System_String_DSharpPlus_Entities_Optional_Stream__System_Nullable_System_UInt64__System_String_" data-uid="DSharpPlus.Entities.DiscordWebhook.ModifyAsync(System.String,DSharpPlus.Entities.Optional{Stream},System.Nullable{System.UInt64},System.String)">ModifyAsync(String, Optional&lt;Stream&gt;, Nullable&lt;UInt64&gt;, String)</h4>
   <div class="markdown level1 summary"><p>Modifies this webhook.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;DiscordWebhook&gt; ModifyAsync(string name = null, Optional&lt;Stream&gt; avatar = default(Optional&lt;Stream&gt;), ulong? channelId = default(ulong? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordWebhook&gt; ModifyAsync(string name = null, Optional&lt;Stream&gt; avatar = default(Optional&lt;Stream&gt;), ulong? channelId = default(ulong? ), string reason = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -689,6 +689,12 @@
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.UInt64</span>&gt;</td>
         <td><span class="parametername">channelId</span></td>
         <td><p>The new channel id to move the webhook to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">reason</span></td>
+        <td><p>Reason for audit logs.</p>
 </td>
       </tr>
     </tbody>

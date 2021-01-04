@@ -1509,14 +1509,14 @@
   </table>
   
   
-  <a id="DSharpPlus_Entities_DiscordMember_SendFileAsync_" data-uid="DSharpPlus.Entities.DiscordMember.SendFileAsync*"></a>
-  <h4 id="DSharpPlus_Entities_DiscordMember_SendFileAsync_FileStream_System_String_System_Boolean_DSharpPlus_Entities_DiscordEmbed_" data-uid="DSharpPlus.Entities.DiscordMember.SendFileAsync(FileStream,System.String,System.Boolean,DSharpPlus.Entities.DiscordEmbed)">SendFileAsync(FileStream, String, Boolean, DiscordEmbed)</h4>
-  <div class="markdown level1 summary"><p>Sends a direct message with a file attached to this member. Creates a direct message channel if one does not exist already.</p>
+  <a id="DSharpPlus_Entities_DiscordMember_SendMessageAsync_" data-uid="DSharpPlus.Entities.DiscordMember.SendMessageAsync*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordMember_SendMessageAsync_DSharpPlus_Entities_DiscordEmbed_" data-uid="DSharpPlus.Entities.DiscordMember.SendMessageAsync(DSharpPlus.Entities.DiscordEmbed)">SendMessageAsync(DiscordEmbed)</h4>
+  <div class="markdown level1 summary"><p>Sends a direct message to this member. Creates a direct message channel if one does not exist already.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;DiscordMessage&gt; SendFileAsync(FileStream fileData, string content = null, bool is_tts = false, DiscordEmbed embed = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordMessage&gt; SendMessageAsync(DiscordEmbed embed)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1528,218 +1528,6 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td><span class="xref">FileStream</span></td>
-        <td><span class="parametername">fileData</span></td>
-        <td><p>Stream containing the data to attach as a file.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">content</span></td>
-        <td><p>Content of the message to send.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">is_tts</span></td>
-        <td><p>Whether the message is to be read using TTS.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Entities.DiscordEmbed.html">DiscordEmbed</a></td>
-        <td><span class="parametername">embed</span></td>
-        <td><p>Embed to attach to the message.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordMessage.html">DiscordMessage</a>&gt;</td>
-        <td><p>The sent message.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
-        <td><p>Thrown when the member has the bot blocked, the member is no longer in the guild, or if the member has Allow DM from server members off.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.NotFoundException.html">NotFoundException</a></td>
-        <td><p>Thrown when the member does not exist.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.BadRequestException.html">BadRequestException</a></td>
-        <td><p>Thrown when an invalid parameter was provided.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
-        <td><p>Thrown when Discord is unable to process the request.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="DSharpPlus_Entities_DiscordMember_SendFileAsync_" data-uid="DSharpPlus.Entities.DiscordMember.SendFileAsync*"></a>
-  <h4 id="DSharpPlus_Entities_DiscordMember_SendFileAsync_System_String_Stream_System_String_System_Boolean_DSharpPlus_Entities_DiscordEmbed_" data-uid="DSharpPlus.Entities.DiscordMember.SendFileAsync(System.String,Stream,System.String,System.Boolean,DSharpPlus.Entities.DiscordEmbed)">SendFileAsync(String, Stream, String, Boolean, DiscordEmbed)</h4>
-  <div class="markdown level1 summary"><p>Sends a direct message with a file attached to this member. Creates a direct message channel if one does not exist already.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;DiscordMessage&gt; SendFileAsync(string fileName, Stream fileData, string content = null, bool is_tts = false, DiscordEmbed embed = null)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">fileName</span></td>
-        <td><p>Name of the file to attach.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Stream</span></td>
-        <td><span class="parametername">fileData</span></td>
-        <td><p>Stream containing the data to attach as a file.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">content</span></td>
-        <td><p>Content of the message to send.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">is_tts</span></td>
-        <td><p>Whether the message is to be read using TTS.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Entities.DiscordEmbed.html">DiscordEmbed</a></td>
-        <td><span class="parametername">embed</span></td>
-        <td><p>Embed to attach to the message.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordMessage.html">DiscordMessage</a>&gt;</td>
-        <td><p>The sent message.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
-        <td><p>Thrown when the member has the bot blocked, the member is no longer in the guild, or if the member has Allow DM from server members off.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.NotFoundException.html">NotFoundException</a></td>
-        <td><p>Thrown when the member does not exist.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.BadRequestException.html">BadRequestException</a></td>
-        <td><p>Thrown when an invalid parameter was provided.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
-        <td><p>Thrown when Discord is unable to process the request.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="DSharpPlus_Entities_DiscordMember_SendFileAsync_" data-uid="DSharpPlus.Entities.DiscordMember.SendFileAsync*"></a>
-  <h4 id="DSharpPlus_Entities_DiscordMember_SendFileAsync_System_String_System_String_System_Boolean_DSharpPlus_Entities_DiscordEmbed_" data-uid="DSharpPlus.Entities.DiscordMember.SendFileAsync(System.String,System.String,System.Boolean,DSharpPlus.Entities.DiscordEmbed)">SendFileAsync(String, String, Boolean, DiscordEmbed)</h4>
-  <div class="markdown level1 summary"><p>Sends a direct message with a file attached to this member. Creates a direct message channel if one does not exist already.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;DiscordMessage&gt; SendFileAsync(string filePath, string content = null, bool is_tts = false, DiscordEmbed embed = null)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">filePath</span></td>
-        <td><p>Path to the file to attach to the message.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">content</span></td>
-        <td><p>Content of the message to send.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">is_tts</span></td>
-        <td><p>Whether the message is to be read using TTS.</p>
-</td>
-      </tr>
       <tr>
         <td><a class="xref" href="DSharpPlus.Entities.DiscordEmbed.html">DiscordEmbed</a></td>
         <td><span class="parametername">embed</span></td>
@@ -1798,13 +1586,13 @@
   
   
   <a id="DSharpPlus_Entities_DiscordMember_SendMessageAsync_" data-uid="DSharpPlus.Entities.DiscordMember.SendMessageAsync*"></a>
-  <h4 id="DSharpPlus_Entities_DiscordMember_SendMessageAsync_System_String_System_Boolean_DSharpPlus_Entities_DiscordEmbed_" data-uid="DSharpPlus.Entities.DiscordMember.SendMessageAsync(System.String,System.Boolean,DSharpPlus.Entities.DiscordEmbed)">SendMessageAsync(String, Boolean, DiscordEmbed)</h4>
+  <h4 id="DSharpPlus_Entities_DiscordMember_SendMessageAsync_DSharpPlus_Entities_DiscordMessageBuilder_" data-uid="DSharpPlus.Entities.DiscordMember.SendMessageAsync(DSharpPlus.Entities.DiscordMessageBuilder)">SendMessageAsync(DiscordMessageBuilder)</h4>
   <div class="markdown level1 summary"><p>Sends a direct message to this member. Creates a direct message channel if one does not exist already.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;DiscordMessage&gt; SendMessageAsync(string content = null, bool is_tts = false, DiscordEmbed embed = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordMessage&gt; SendMessageAsync(DiscordMessageBuilder message)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1817,21 +1605,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">content</span></td>
-        <td><p>Content of the message to send.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">is_tts</span></td>
-        <td><p>Whether the message is to be read using TTS.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DSharpPlus.Entities.DiscordEmbed.html">DiscordEmbed</a></td>
-        <td><span class="parametername">embed</span></td>
-        <td><p>Embed to attach to the message.</p>
+        <td><a class="xref" href="DSharpPlus.Entities.DiscordMessageBuilder.html">DiscordMessageBuilder</a></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>Builder to with the message.</p>
 </td>
       </tr>
     </tbody>
@@ -1885,14 +1661,14 @@
   </table>
   
   
-  <a id="DSharpPlus_Entities_DiscordMember_SendMultipleFilesAsync_" data-uid="DSharpPlus.Entities.DiscordMember.SendMultipleFilesAsync*"></a>
-  <h4 id="DSharpPlus_Entities_DiscordMember_SendMultipleFilesAsync_Dictionary_System_String_Stream__System_String_System_Boolean_DSharpPlus_Entities_DiscordEmbed_" data-uid="DSharpPlus.Entities.DiscordMember.SendMultipleFilesAsync(Dictionary{System.String,Stream},System.String,System.Boolean,DSharpPlus.Entities.DiscordEmbed)">SendMultipleFilesAsync(Dictionary&lt;String, Stream&gt;, String, Boolean, DiscordEmbed)</h4>
-  <div class="markdown level1 summary"><p>Sends a direct message with several files attached to this member. Creates a direct message channel if one does not exist already.</p>
+  <a id="DSharpPlus_Entities_DiscordMember_SendMessageAsync_" data-uid="DSharpPlus.Entities.DiscordMember.SendMessageAsync*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordMember_SendMessageAsync_System_String_" data-uid="DSharpPlus.Entities.DiscordMember.SendMessageAsync(System.String)">SendMessageAsync(String)</h4>
+  <div class="markdown level1 summary"><p>Sends a direct message to this member. Creates a direct message channel if one does not exist already.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;DiscordMessage&gt; SendMultipleFilesAsync(Dictionary&lt;string, Stream&gt; files, string content = null, bool is_tts = false, DiscordEmbed embed = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordMessage&gt; SendMessageAsync(string content)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1905,21 +1681,85 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">Stream</span>&gt;</td>
-        <td><span class="parametername">files</span></td>
-        <td><p>Dictionary of filename to data stream containing the data to upload as files.</p>
-</td>
-      </tr>
-      <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">content</span></td>
         <td><p>Content of the message to send.</p>
 </td>
       </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">is_tts</span></td>
-        <td><p>Whether the message is to be read using TTS.</p>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordMessage.html">DiscordMessage</a>&gt;</td>
+        <td><p>The sent message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.UnauthorizedException.html">UnauthorizedException</a></td>
+        <td><p>Thrown when the member has the bot blocked, the member is no longer in the guild, or if the member has Allow DM from server members off.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.NotFoundException.html">NotFoundException</a></td>
+        <td><p>Thrown when the member does not exist.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.BadRequestException.html">BadRequestException</a></td>
+        <td><p>Thrown when an invalid parameter was provided.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Exceptions.ServerErrorException.html">ServerErrorException</a></td>
+        <td><p>Thrown when Discord is unable to process the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordMember_SendMessageAsync_" data-uid="DSharpPlus.Entities.DiscordMember.SendMessageAsync*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordMember_SendMessageAsync_System_String_DSharpPlus_Entities_DiscordEmbed_" data-uid="DSharpPlus.Entities.DiscordMember.SendMessageAsync(System.String,DSharpPlus.Entities.DiscordEmbed)">SendMessageAsync(String, DiscordEmbed)</h4>
+  <div class="markdown level1 summary"><p>Sends a direct message to this member. Creates a direct message channel if one does not exist already.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;DiscordMessage&gt; SendMessageAsync(string content, DiscordEmbed embed)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">content</span></td>
+        <td><p>Content of the message to send.</p>
 </td>
       </tr>
       <tr>

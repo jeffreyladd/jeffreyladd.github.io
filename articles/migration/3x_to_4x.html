@@ -123,7 +123,29 @@ updating e.g. a role like this:</p>
     x.Name = &quot;Modified Role&quot;;
     x.Color = new DiscordColor(0xFF00FF);
 });
-</code></pre><h3 id="logging-changes">Logging Changes</h3>
+</code></pre><h3 id="sendmessageasync-and-sendfileasync-methods">SendMessageAsync and SendFileAsync Methods</h3>
+<p>We now have a message builder that will handle any advanced creating and modifing of messages.  Below are the overloads for
+sending and modifing messages:</p>
+<ol>
+<li><p>Sending Messages</p>
+<ul>
+<li><a class="xref" href="../../api/DSharpPlus.DiscordClient.html#DSharpPlus_DiscordClient_SendMessageAsync_DiscordChannel_DiscordEmbed_">SendMessageAsync(DiscordChannel, DiscordEmbed)</a></li>
+<li><a class="xref" href="../../api/DSharpPlus.DiscordClient.html#DSharpPlus_DiscordClient_SendMessageAsync_DiscordChannel_System_String_">SendMessageAsync(DiscordChannel, String)</a></li>
+<li><a class="xref" href="../../api/DSharpPlus.DiscordClient.html#DSharpPlus_DiscordClient_SendMessageAsync_DiscordChannel_System_String_DiscordEmbed_">SendMessageAsync(DiscordChannel, String, DiscordEmbed)</a></li>
+<li><a class="xref" href="../../api/DSharpPlus.DiscordClient.html#DSharpPlus_DiscordClient_SendMessageAsync_DiscordChannel_DiscordMessageBuilder_">SendMessageAsync(DiscordChannel, DiscordMessageBuilder)</a></li>
+</ul>
+</li>
+<li><p>Modifying Messages</p>
+<ul>
+<li><a class="xref" href="../../api/DSharpPlus.Entities.DiscordMessage.html#DSharpPlus_Entities_DiscordMessage_ModifyAsync_DSharpPlus_Entities_Optional_DSharpPlus_Entities_DiscordEmbed__">ModifyAsync(Optional&lt;DiscordEmbed&gt;)</a></li>
+<li><a class="xref" href="../../api/DSharpPlus.Entities.DiscordMessage.html#DSharpPlus_Entities_DiscordMessage_ModifyAsync_DSharpPlus_Entities_Optional_System_String__">ModifyAsync(Optional&lt;String&gt;)</a></li>
+<li><a class="xref" href="../../api/DSharpPlus.Entities.DiscordMessage.html#DSharpPlus_Entities_DiscordMessage_ModifyAsync_DSharpPlus_Entities_Optional_System_String__DSharpPlus_Entities_Optional_DSharpPlus_Entities_DiscordEmbed__">ModifyAsync(Optional&lt;String&gt;, Optional&lt;DiscordEmbed&gt;)</a></li>
+<li><a class="xref" href="../../api/DSharpPlus.Entities.DiscordMessage.html#DSharpPlus_Entities_DiscordMessage_ModifyAsync_DSharpPlus_Entities_DiscordMessageBuilder_">ModifyAsync(DiscordMessageBuilder)</a></li>
+</ul>
+</li>
+</ol>
+<p>Using the <a class="xref" href="../../api/DSharpPlus.Entities.DiscordMessageBuilder.html">DiscordMessageBuilder</a> can be found <a class="xref" href="../beyond_basics/messagebuilder.html">here</a></p>
+<h3 id="logging-changes">Logging Changes</h3>
 <p>Logging was overhauled and now some of the Properties on <a class="xref" href="../../api/DSharpPlus.DiscordConfiguration.html">DiscordConfiguration</a> along with 
 some of the events on <a class="xref" href="../../api/DSharpPlus.DiscordClient.html">DiscordClient</a> are Gone/Modified/Added.  Below is a listing of what changed:</p>
 <ul>
@@ -299,7 +321,7 @@ For more information, see the <a class="xref" href="../audio/lavalink/setup.html
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/jeffreyladd/DSharpPlus/blob/TweakFAQ/docs/articles/migration/3x_to_4x.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/jeffreyladd/DSharpPlus/blob/DocumentMessageBuilder/docs/articles/migration/3x_to_4x.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
