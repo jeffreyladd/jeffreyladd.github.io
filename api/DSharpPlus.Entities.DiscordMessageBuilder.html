@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class DiscordMessageBuilder
    ">
-    <meta name="generator" content="docfx 2.56.2.0">
+    <meta name="generator" content="docfx 2.56.6.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -157,7 +157,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IReadOnlyDictionary&lt;string, Stream&gt; Files { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public IReadOnlyCollection&lt;DiscordMessageFile&gt; Files { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -169,7 +169,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IReadOnlyDictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">Stream</span>&gt;</td>
+        <td><span class="xref">IReadOnlyCollection</span>&lt;<a class="xref" href="DSharpPlus.Entities.DiscordMessageFile.html">DiscordMessageFile</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -184,6 +184,32 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool IsTTS { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordMessageBuilder_MentionOnReply_" data-uid="DSharpPlus.Entities.DiscordMessageBuilder.MentionOnReply*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordMessageBuilder_MentionOnReply" data-uid="DSharpPlus.Entities.DiscordMessageBuilder.MentionOnReply">MentionOnReply</h4>
+  <div class="markdown level1 summary"><p>Gets if the Reply should mention the user.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool MentionOnReply { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -222,6 +248,32 @@
     <tbody>
       <tr>
         <td><span class="xref">List</span>&lt;<a class="xref" href="DSharpPlus.Entities.IMention.html">IMention</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordMessageBuilder_ReplyId_" data-uid="DSharpPlus.Entities.DiscordMessageBuilder.ReplyId*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordMessageBuilder_ReplyId" data-uid="DSharpPlus.Entities.DiscordMessageBuilder.ReplyId">ReplyId</h4>
+  <div class="markdown level1 summary"><p>Gets the Reply Message ID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ulong? ReplyId { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.UInt64</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -699,6 +751,56 @@
         <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">Stream</span>&gt;</td>
         <td><span class="parametername">files</span></td>
         <td><p>The Files that should be sent.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DSharpPlus.Entities.DiscordMessageBuilder.html">DiscordMessageBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="DSharpPlus_Entities_DiscordMessageBuilder_WithReply_" data-uid="DSharpPlus.Entities.DiscordMessageBuilder.WithReply*"></a>
+  <h4 id="DSharpPlus_Entities_DiscordMessageBuilder_WithReply_System_UInt64_System_Boolean_" data-uid="DSharpPlus.Entities.DiscordMessageBuilder.WithReply(System.UInt64,System.Boolean)">WithReply(UInt64, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Sets if the message is a reply</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DiscordMessageBuilder WithReply(ulong messageId, bool mention = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">messageId</span></td>
+        <td><p>The ID of the message to reply to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">mention</span></td>
+        <td><p>If we should mention the user in the reply.</p>
 </td>
       </tr>
     </tbody>

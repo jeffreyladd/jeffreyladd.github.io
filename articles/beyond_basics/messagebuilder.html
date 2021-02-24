@@ -8,7 +8,7 @@
     <title>Message Builder </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Message Builder ">
-    <meta name="generator" content="docfx 2.56.2.0">
+    <meta name="generator" content="docfx 2.56.6.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -76,38 +76,48 @@
             <article class="content wrap" id="_content" data-uid="beyond_basics_messagebuilder">
 <h2 id="background">Background</h2>
 
-<p>Before the message builder was put into place, we have 1 large method for sending messages along with 3 additional methods for sending files.  This
-was becoming a major code smell and was hard to maintain and add more params onto it.  Now we just support sending a simple message, an embed, a simple
-message with an embed, or a full fledge message builder.</p>
+<p>Before the message builder was put into place, we had one large method for sending messages along with 3 additional methods for sending files. This
+was becoming a major code smell and it was hard to maintain and add more params onto it. Now we support just sending a simple message, an embed, a simple
+message with an embed, or a full fledged message builder.</p>
 <h2 id="using-the-message-builder">Using the Message Builder</h2>
-<p>The API Documentation for the message builder can be found <a class="xref" href="../../api/DSharpPlus.Entities.DiscordMessageBuilder.html">DiscordMessageBuilder</a> but here we will go over some concepts of using the
+<p>The API Documentation for the message builder can be found at <a class="xref" href="../../api/DSharpPlus.Entities.DiscordMessageBuilder.html">DiscordMessageBuilder</a> but here we&#39;ll go over some of the concepts of using the
 message builder:</p>
 <h3 id="adding-a-file">Adding a File:</h3>
-<p>With sending a file(s), you will have to use the MessageBuilder to construct your message, see example below:</p>
+<p>For sending files, you&#39;ll have to use the MessageBuilder to construct your message, see example below:</p>
 <pre><code class="lang-cs"> using (var fs = new FileStream(&quot;ADumbFile.txt&quot;, FileMode.Open, FileAccess.Read))
  {
     var msg = await new DiscordMessageBuilder()
-        .WithContent(&quot;Here is a really dumb file that i am testing with.&quot;)
+        .WithContent(&quot;Here is a really dumb file that I am testing with.&quot;)
         .WithFiles(new Dictionary&lt;string, Stream&gt;() { { &quot;ADumbFile1.txt&quot;, fs } })
         .SendAsync(ctx.Channel);           
 }
 </code></pre><p>OR</p>
 <pre><code class="lang-cs">var msg = await new DiscordMessageBuilder()
-    .WithContent(&quot;Here is a really dumb file that i am testing with.&quot;)
+    .WithContent(&quot;Here is a really dumb file that I am testing with.&quot;)
     .WithFile(&quot;./ADumbFile.txt&quot;)
     .SendAsync(ctx.Channel);
 </code></pre><h3 id="adding-mentions">Adding Mentions</h3>
-<p>With sending a mention(s), you will have to use the MessageBuilder to construct your message, see example below:</p>
+<p>For sending mentions, you&#39;ll have to use the MessageBuilder to construct your message, see example below:</p>
 <pre><code class="lang-cs">var msg = await new DiscordMessageBuilder()
     .WithContent($&quot;✔ UserMention(user): Hey, {user.Mention}! Listen!&quot;)
     .WithAllowedMentions(new IMention[] { new UserMention(user) })
     .SendAsync(ctx.Channel);      
 </code></pre><h3 id="sending-tts-messages">Sending TTS Messages</h3>
-<p>With sending a TTS, you will have to use the MessageBuilder to construct your message, see example below:</p>
+<p>For sending a TTS message, you&#39;ll have to use the MessageBuilder to construct your message, see example below:</p>
 <pre><code class="lang-cs">var msg = await new DiscordMessageBuilder()
     .WithContent($&quot;This is a dumb message&quot;)
     .HasTTS(true)
     .SendAsync(ctx.Channel);      
+</code></pre><h3 id="sending-an-inline-reply">Sending an Inline Reply</h3>
+<p>For sending an inline reply, you&#39;ll have to use the MessageBuilder to construct your message, see example below:</p>
+<pre><code class="lang-cs">var msg = await new DiscordMessageBuilder()
+    .WithContent($&quot;I&#39;m talking to *you*!&quot;)
+    .WithReply(ctx.Message.Id)
+    .SendAsync(ctx.Channel);
+</code></pre><p>By default, replies do not mention. To make a reply mention, simply pass true as the second parameter:</p>
+<pre><code class="lang-cs">// ...
+    .WithReply(ctx.Message.Id, true);
+// ...
 </code></pre></article>
           </div>
           
@@ -116,7 +126,7 @@ message builder:</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/jeffreyladd/DSharpPlus/blob/DocumentMessageBuilder/docs/articles/beyond_basics/messagebuilder.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/jeffreyladd/DSharpPlus/blob/DocumentationUpdate/docs/articles/beyond_basics/messagebuilder.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

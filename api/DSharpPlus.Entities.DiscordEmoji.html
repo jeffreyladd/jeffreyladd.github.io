@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class DiscordEmoji
    ">
-    <meta name="generator" content="docfx 2.56.2.0">
+    <meta name="generator" content="docfx 2.56.6.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -437,13 +437,13 @@
   
   
   <a id="DSharpPlus_Entities_DiscordEmoji_FromName_" data-uid="DSharpPlus.Entities.DiscordEmoji.FromName*"></a>
-  <h4 id="DSharpPlus_Entities_DiscordEmoji_FromName_DSharpPlus_BaseDiscordClient_System_String_" data-uid="DSharpPlus.Entities.DiscordEmoji.FromName(DSharpPlus.BaseDiscordClient,System.String)">FromName(BaseDiscordClient, String)</h4>
+  <h4 id="DSharpPlus_Entities_DiscordEmoji_FromName_DSharpPlus_BaseDiscordClient_System_String_System_Boolean_" data-uid="DSharpPlus.Entities.DiscordEmoji.FromName(DSharpPlus.BaseDiscordClient,System.String,System.Boolean)">FromName(BaseDiscordClient, String, Boolean)</h4>
   <div class="markdown level1 summary"><p>Creates a DiscordEmoji from emote name that includes colons (eg. :thinking:). This method also supports skin tone variations (eg. <span class="emoji" shortcode="ok_hand">👌</span>:skin-tone-2:), standard emoticons (eg. :D), as well as guild emoji (still specified by :name:).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static DiscordEmoji FromName(BaseDiscordClient client, string name)</code></pre>
+    <pre><code class="lang-csharp hljs">public static DiscordEmoji FromName(BaseDiscordClient client, string name, bool includeGuilds = true)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -465,6 +465,12 @@
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">name</span></td>
         <td><p>Name of the emote to find, including colons (eg. :thinking:).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">includeGuilds</span></td>
+        <td><p>Should guild emojis be included in the search.</p>
 </td>
       </tr>
     </tbody>

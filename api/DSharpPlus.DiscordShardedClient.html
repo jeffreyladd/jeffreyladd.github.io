@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class DiscordShardedClient
    ">
-    <meta name="generator" content="docfx 2.56.2.0">
+    <meta name="generator" content="docfx 2.56.6.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -501,7 +501,8 @@
   
   
   <h4 id="DSharpPlus_DiscordShardedClient_ChannelCreated" data-uid="DSharpPlus.DiscordShardedClient.ChannelCreated">ChannelCreated</h4>
-  <div class="markdown level1 summary"><p>Fired when a new channel is created.</p>
+  <div class="markdown level1 summary"><p>Fired when a new channel is created.
+For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_Guilds">Guilds</a> intent specified in <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_Intents">Intents</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -526,7 +527,8 @@
   
   
   <h4 id="DSharpPlus_DiscordShardedClient_ChannelDeleted" data-uid="DSharpPlus.DiscordShardedClient.ChannelDeleted">ChannelDeleted</h4>
-  <div class="markdown level1 summary"><p>Fired when a channel is deleted</p>
+  <div class="markdown level1 summary"><p>Fired when a channel is deleted
+For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_Guilds">Guilds</a> intent specified in <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_Intents">Intents</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -551,7 +553,8 @@
   
   
   <h4 id="DSharpPlus_DiscordShardedClient_ChannelPinsUpdated" data-uid="DSharpPlus.DiscordShardedClient.ChannelPinsUpdated">ChannelPinsUpdated</h4>
-  <div class="markdown level1 summary"><p>Fired whenever a channel&apos;s pinned message list is updated.</p>
+  <div class="markdown level1 summary"><p>Fired whenever a channel&apos;s pinned message list is updated.
+For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_Guilds">Guilds</a> intent specified in <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_Intents">Intents</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -576,7 +579,8 @@
   
   
   <h4 id="DSharpPlus_DiscordShardedClient_ChannelUpdated" data-uid="DSharpPlus.DiscordShardedClient.ChannelUpdated">ChannelUpdated</h4>
-  <div class="markdown level1 summary"><p>Fired when a channel is updated.</p>
+  <div class="markdown level1 summary"><p>Fired when a channel is updated.
+For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_Guilds">Guilds</a> intent specified in <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_Intents">Intents</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -625,33 +629,9 @@
   </table>
   
   
-  <h4 id="DSharpPlus_DiscordShardedClient_DmChannelCreated" data-uid="DSharpPlus.DiscordShardedClient.DmChannelCreated">DmChannelCreated</h4>
-  <div class="markdown level1 summary"><p>Fired when a new direct message channel is created.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event AsyncEventHandler&lt;DiscordClient, DmChannelCreateEventArgs&gt; DmChannelCreated</code></pre>
-  </div>
-  <h5 class="eventType">Event Type</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">AsyncEventHandler</span>&lt;<a class="xref" href="DSharpPlus.DiscordClient.html">DiscordClient</a>, <span class="xref">DmChannelCreateEventArgs</span>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
   <h4 id="DSharpPlus_DiscordShardedClient_DmChannelDeleted" data-uid="DSharpPlus.DiscordShardedClient.DmChannelDeleted">DmChannelDeleted</h4>
-  <div class="markdown level1 summary"><p>Fired when a dm channel is deleted</p>
+  <div class="markdown level1 summary"><p>Fired when a dm channel is deleted
+For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_DirectMessages">DirectMessages</a> intent specified in <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_Intents">Intents</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -701,7 +681,8 @@
   
   
   <h4 id="DSharpPlus_DiscordShardedClient_GuildBanAdded" data-uid="DSharpPlus.DiscordShardedClient.GuildBanAdded">GuildBanAdded</h4>
-  <div class="markdown level1 summary"><p>Fired when a guild ban gets added</p>
+  <div class="markdown level1 summary"><p>Fired when a guild ban gets added
+For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_GuildBans">GuildBans</a> intent specified in <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_Intents">Intents</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -726,7 +707,8 @@
   
   
   <h4 id="DSharpPlus_DiscordShardedClient_GuildBanRemoved" data-uid="DSharpPlus.DiscordShardedClient.GuildBanRemoved">GuildBanRemoved</h4>
-  <div class="markdown level1 summary"><p>Fired when a guild ban gets removed</p>
+  <div class="markdown level1 summary"><p>Fired when a guild ban gets removed
+For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_GuildBans">GuildBans</a> intent specified in <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_Intents">Intents</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -751,7 +733,8 @@
   
   
   <h4 id="DSharpPlus_DiscordShardedClient_GuildCreated" data-uid="DSharpPlus.DiscordShardedClient.GuildCreated">GuildCreated</h4>
-  <div class="markdown level1 summary"><p>Fired when the user joins a new guild.</p>
+  <div class="markdown level1 summary"><p>Fired when the user joins a new guild.
+For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_Guilds">Guilds</a> intent specified in <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_Intents">Intents</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -778,7 +761,8 @@
   
   
   <h4 id="DSharpPlus_DiscordShardedClient_GuildDeleted" data-uid="DSharpPlus.DiscordShardedClient.GuildDeleted">GuildDeleted</h4>
-  <div class="markdown level1 summary"><p>Fired when the user leaves or is removed from a guild.</p>
+  <div class="markdown level1 summary"><p>Fired when the user leaves or is removed from a guild.
+For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_Guilds">Guilds</a> intent specified in <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_Intents">Intents</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -828,7 +812,8 @@
   
   
   <h4 id="DSharpPlus_DiscordShardedClient_GuildEmojisUpdated" data-uid="DSharpPlus.DiscordShardedClient.GuildEmojisUpdated">GuildEmojisUpdated</h4>
-  <div class="markdown level1 summary"><p>Fired when a guilds emojis get updated</p>
+  <div class="markdown level1 summary"><p>Fired when a guilds emojis get updated
+For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_GuildEmojis">GuildEmojis</a> intent specified in <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_Intents">Intents</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -878,7 +863,8 @@
   
   
   <h4 id="DSharpPlus_DiscordShardedClient_GuildMemberAdded" data-uid="DSharpPlus.DiscordShardedClient.GuildMemberAdded">GuildMemberAdded</h4>
-  <div class="markdown level1 summary"><p>Fired when a new user joins a guild.</p>
+  <div class="markdown level1 summary"><p>Fired when a new user joins a guild.
+For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_GuildMembers">GuildMembers</a> intent specified in <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_Intents">Intents</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -903,7 +889,8 @@
   
   
   <h4 id="DSharpPlus_DiscordShardedClient_GuildMemberRemoved" data-uid="DSharpPlus.DiscordShardedClient.GuildMemberRemoved">GuildMemberRemoved</h4>
-  <div class="markdown level1 summary"><p>Fired when a user is removed from a guild (leave/kick/ban).</p>
+  <div class="markdown level1 summary"><p>Fired when a user is removed from a guild (leave/kick/ban).
+For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_GuildMembers">GuildMembers</a> intent specified in <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_Intents">Intents</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -953,7 +940,8 @@
   
   
   <h4 id="DSharpPlus_DiscordShardedClient_GuildMemberUpdated" data-uid="DSharpPlus.DiscordShardedClient.GuildMemberUpdated">GuildMemberUpdated</h4>
-  <div class="markdown level1 summary"><p>Fired when a guild member is updated.</p>
+  <div class="markdown level1 summary"><p>Fired when a guild member is updated.
+For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_GuildMembers">GuildMembers</a> intent specified in <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_Intents">Intents</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -978,7 +966,8 @@
   
   
   <h4 id="DSharpPlus_DiscordShardedClient_GuildRoleCreated" data-uid="DSharpPlus.DiscordShardedClient.GuildRoleCreated">GuildRoleCreated</h4>
-  <div class="markdown level1 summary"><p>Fired when a guild role is created.</p>
+  <div class="markdown level1 summary"><p>Fired when a guild role is created.
+For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_Guilds">Guilds</a> intent specified in <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_Intents">Intents</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1003,7 +992,8 @@
   
   
   <h4 id="DSharpPlus_DiscordShardedClient_GuildRoleDeleted" data-uid="DSharpPlus.DiscordShardedClient.GuildRoleDeleted">GuildRoleDeleted</h4>
-  <div class="markdown level1 summary"><p>Fired when a guild role is updated.</p>
+  <div class="markdown level1 summary"><p>Fired when a guild role is updated.
+For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_Guilds">Guilds</a> intent specified in <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_Intents">Intents</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1028,7 +1018,8 @@
   
   
   <h4 id="DSharpPlus_DiscordShardedClient_GuildRoleUpdated" data-uid="DSharpPlus.DiscordShardedClient.GuildRoleUpdated">GuildRoleUpdated</h4>
-  <div class="markdown level1 summary"><p>Fired when a guild role is updated.</p>
+  <div class="markdown level1 summary"><p>Fired when a guild role is updated.
+For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_Guilds">Guilds</a> intent specified in <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_Intents">Intents</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1078,7 +1069,8 @@
   
   
   <h4 id="DSharpPlus_DiscordShardedClient_GuildUpdated" data-uid="DSharpPlus.DiscordShardedClient.GuildUpdated">GuildUpdated</h4>
-  <div class="markdown level1 summary"><p>Fired when a guild is updated.</p>
+  <div class="markdown level1 summary"><p>Fired when a guild is updated.
+For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_Guilds">Guilds</a> intent specified in <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_Intents">Intents</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1128,7 +1120,8 @@
   
   
   <h4 id="DSharpPlus_DiscordShardedClient_InviteCreated" data-uid="DSharpPlus.DiscordShardedClient.InviteCreated">InviteCreated</h4>
-  <div class="markdown level1 summary"><p>Fired when an invite is created.</p>
+  <div class="markdown level1 summary"><p>Fired when an invite is created.
+For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_GuildInvites">GuildInvites</a> intent specified in <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_Intents">Intents</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1153,7 +1146,8 @@
   
   
   <h4 id="DSharpPlus_DiscordShardedClient_InviteDeleted" data-uid="DSharpPlus.DiscordShardedClient.InviteDeleted">InviteDeleted</h4>
-  <div class="markdown level1 summary"><p>Fired when an invite is deleted.</p>
+  <div class="markdown level1 summary"><p>Fired when an invite is deleted.
+For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_GuildInvites">GuildInvites</a> intent specified in <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_Intents">Intents</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1178,7 +1172,8 @@
   
   
   <h4 id="DSharpPlus_DiscordShardedClient_MessageCreated" data-uid="DSharpPlus.DiscordShardedClient.MessageCreated">MessageCreated</h4>
-  <div class="markdown level1 summary"><p>Fired when a message is created.</p>
+  <div class="markdown level1 summary"><p>Fired when a message is created.
+For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_GuildMessages">GuildMessages</a> intent specified in <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_Intents">Intents</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1203,7 +1198,8 @@
   
   
   <h4 id="DSharpPlus_DiscordShardedClient_MessageDeleted" data-uid="DSharpPlus.DiscordShardedClient.MessageDeleted">MessageDeleted</h4>
-  <div class="markdown level1 summary"><p>Fired when a message is deleted.</p>
+  <div class="markdown level1 summary"><p>Fired when a message is deleted.
+For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_GuildMessages">GuildMessages</a> intent specified in <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_Intents">Intents</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1228,7 +1224,8 @@
   
   
   <h4 id="DSharpPlus_DiscordShardedClient_MessageReactionAdded" data-uid="DSharpPlus.DiscordShardedClient.MessageReactionAdded">MessageReactionAdded</h4>
-  <div class="markdown level1 summary"><p>Fired when a reaction gets added to a message.</p>
+  <div class="markdown level1 summary"><p>Fired when a reaction gets added to a message.
+For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_GuildMessageReactions">GuildMessageReactions</a> intent specified in <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_Intents">Intents</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1253,7 +1250,8 @@
   
   
   <h4 id="DSharpPlus_DiscordShardedClient_MessageReactionRemoved" data-uid="DSharpPlus.DiscordShardedClient.MessageReactionRemoved">MessageReactionRemoved</h4>
-  <div class="markdown level1 summary"><p>Fired when a reaction gets removed from a message.</p>
+  <div class="markdown level1 summary"><p>Fired when a reaction gets removed from a message.
+For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_GuildMessageReactions">GuildMessageReactions</a> intent specified in <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_Intents">Intents</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1278,7 +1276,8 @@
   
   
   <h4 id="DSharpPlus_DiscordShardedClient_MessageReactionRemovedEmoji" data-uid="DSharpPlus.DiscordShardedClient.MessageReactionRemovedEmoji">MessageReactionRemovedEmoji</h4>
-  <div class="markdown level1 summary"><p>Fired when all reactions of a specific reaction are removed from a message.</p>
+  <div class="markdown level1 summary"><p>Fired when all reactions of a specific reaction are removed from a message.
+For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_GuildMessageReactions">GuildMessageReactions</a> intent specified in <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_Intents">Intents</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1303,7 +1302,8 @@
   
   
   <h4 id="DSharpPlus_DiscordShardedClient_MessageReactionsCleared" data-uid="DSharpPlus.DiscordShardedClient.MessageReactionsCleared">MessageReactionsCleared</h4>
-  <div class="markdown level1 summary"><p>Fired when all reactions get removed from a message.</p>
+  <div class="markdown level1 summary"><p>Fired when all reactions get removed from a message.
+For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_GuildMessageReactions">GuildMessageReactions</a> intent specified in <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_Intents">Intents</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1328,7 +1328,8 @@
   
   
   <h4 id="DSharpPlus_DiscordShardedClient_MessagesBulkDeleted" data-uid="DSharpPlus.DiscordShardedClient.MessagesBulkDeleted">MessagesBulkDeleted</h4>
-  <div class="markdown level1 summary"><p>Fired when multiple messages are deleted at once.</p>
+  <div class="markdown level1 summary"><p>Fired when multiple messages are deleted at once.
+For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_GuildMessages">GuildMessages</a> intent specified in <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_Intents">Intents</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1353,7 +1354,8 @@
   
   
   <h4 id="DSharpPlus_DiscordShardedClient_MessageUpdated" data-uid="DSharpPlus.DiscordShardedClient.MessageUpdated">MessageUpdated</h4>
-  <div class="markdown level1 summary"><p>Fired when a message is updated.</p>
+  <div class="markdown level1 summary"><p>Fired when a message is updated.
+For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_GuildMessages">GuildMessages</a> intent specified in <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_Intents">Intents</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1378,7 +1380,8 @@
   
   
   <h4 id="DSharpPlus_DiscordShardedClient_PresenceUpdated" data-uid="DSharpPlus.DiscordShardedClient.PresenceUpdated">PresenceUpdated</h4>
-  <div class="markdown level1 summary"><p>Fired when a presence has been updated.</p>
+  <div class="markdown level1 summary"><p>Fired when a presence has been updated.
+For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_GuildPresences">GuildPresences</a> intent specified in <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_Intents">Intents</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1578,7 +1581,8 @@
   
   
   <h4 id="DSharpPlus_DiscordShardedClient_UserSettingsUpdated" data-uid="DSharpPlus.DiscordShardedClient.UserSettingsUpdated">UserSettingsUpdated</h4>
-  <div class="markdown level1 summary"><p>Fired when the current user updates their settings.</p>
+  <div class="markdown level1 summary"><p>Fired when the current user updates their settings.
+For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_GuildPresences">GuildPresences</a> intent specified in <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_Intents">Intents</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1603,7 +1607,8 @@
   
   
   <h4 id="DSharpPlus_DiscordShardedClient_UserUpdated" data-uid="DSharpPlus.DiscordShardedClient.UserUpdated">UserUpdated</h4>
-  <div class="markdown level1 summary"><p>Fired when properties about the current user change.</p>
+  <div class="markdown level1 summary"><p>Fired when properties about the current user change.
+For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_GuildPresences">GuildPresences</a> intent specified in <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_Intents">Intents</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1630,7 +1635,8 @@
   
   
   <h4 id="DSharpPlus_DiscordShardedClient_VoiceServerUpdated" data-uid="DSharpPlus.DiscordShardedClient.VoiceServerUpdated">VoiceServerUpdated</h4>
-  <div class="markdown level1 summary"><p>Fired when a guild&apos;s voice server is updated.</p>
+  <div class="markdown level1 summary"><p>Fired when a guild&apos;s voice server is updated.
+For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_GuildVoiceStates">GuildVoiceStates</a> intent specified in <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_Intents">Intents</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1655,7 +1661,8 @@
   
   
   <h4 id="DSharpPlus_DiscordShardedClient_VoiceStateUpdated" data-uid="DSharpPlus.DiscordShardedClient.VoiceStateUpdated">VoiceStateUpdated</h4>
-  <div class="markdown level1 summary"><p>Fired when someone joins/leaves/moves voice channels.</p>
+  <div class="markdown level1 summary"><p>Fired when someone joins/leaves/moves voice channels.
+For this Event you need the <a class="xref" href="DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_GuildVoiceStates">GuildVoiceStates</a> intent specified in <a class="xref" href="DSharpPlus.DiscordConfiguration.html#DSharpPlus_DiscordConfiguration_Intents">Intents</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
