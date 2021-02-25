@@ -147,6 +147,9 @@ However, if you meant an activity like this:</p>
 <h3 id="why-are-you-using-newtonsoftjson-when-systemtextjson-is-available">Why are you using Newtonsoft.Json when System.Text.Json is available</h3>
 <p>Yes <code>System.Text.Json</code> is available to use but it still doesnt stand up to what we currently need which is why we still use Newtonsoft.Json.
 Maybe in time we can switch to your favorite Json Deserializer but for right now we will be using Newtonsoft.Json for the forseeable future.  </p>
+<h3 id="why-the-hell-are-my-events-not-firing">Why the hell are my events not firing?</h3>
+<p>This is because in the Discord V8 API, they require <a class="xref" href="api/DSharpPlus.DiscordIntents.html">DiscordIntents</a> to be enabled on <a class="xref" href="api/DSharpPlus.DiscordConfiguration.html">DiscordConfiguration</a> and the 
+Discord Application Portal.  We have an <a class="xref" href="articles/beyond_basics/intents.html">article</a> that covers all that has to be done to set this up.</p>
 <h3 id="where-are-my-pictures-of-spiderman">Where are my pictures of spiderman?</h3>
 <p><img src="/images/faq_03.png" alt="GOD DAMN IT PETER"></p>
 </article>
