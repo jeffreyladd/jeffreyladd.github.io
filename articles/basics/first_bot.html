@@ -174,13 +174,13 @@ However, if you copy-pasted the snippet above, VS will complain about being unab
 We&#39;ll now create a new <code>DiscordClient</code> instance in our brand new asynchronous method.</p>
 <p>Create a new variable in <code>MainAsync</code> and assign it a new <code>DiscordClient</code> instance, then pass an instance of <code>DiscordConfiguration</code> to its constructor.
 Create an object initializer for <code>DiscordConfiguration</code> and populate the <code>Token</code> property with your bot token then set the <code>TokenType</code> property to <code>TokenType.Bot</code>.
-Next add the <code>Intents</code> Property and Populated it with the <a class="xref" href="../../api/DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_GuildMessages">GuildMessages</a> and <a class="xref" href="../../api/DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_DirectMessages">DirectMessages</a> values.  These Intents 
+Next add the <code>Intents</code> Property and Populated it with the <a class="xref" href="../../api/DSharpPlus.DiscordIntents.html#DSharpPlus_DiscordIntents_AllUnprivileged">AllUnprivileged</a> value.  These Intents 
 are required for certain Events to be fired.  Please visit this <a class="xref" href="../beyond_basics/intents.html">article</a> for more information.</p>
 <pre><code class="lang-cs">var discord = new DiscordClient(new DiscordConfiguration()
 {
     Token = &quot;My First Token&quot;,
     TokenType = TokenType.Bot,
-    Intents = DiscordIntents.GuildMessages | DiscordIntents.DirectMessages       
+    Intents = DiscordIntents.AllUnprivileged     
 });
 </code></pre><div class="WARNING"><h5>Warning</h5><p>We hard-code the token in the above snippet to keep things simple and easy to understand.</p>
 <p>Hard-coding your token is <em>not</em> a smart idea, especially if you plan on distributing your source code.
